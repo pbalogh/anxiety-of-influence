@@ -225,7 +225,14 @@ Unique tokens & L1H11 & L0H1 & L0H5 & L3H0$^\dagger$ & Controls \\
 \end{tabular}
 \end{table}
 
-The results (Table~\ref{tab:capacity}) reveal three distinct behaviors:
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig3_capacity_curve.pdf}
+\caption{Capacity analysis under controlled conditions (fixed sequence length = 200). \textbf{Left:} L1H11 shows the classic Bloom filter saturation curve ($R^2 = 1.0$, $m \approx 5$ bits), with theoretical Bloom filter overlay. L0H1 and L0H5 maintain near-zero FP rates across all loads. \textbf{Right:} L3H0$^\dagger$ (reclassified as prefix-attention head) shows FP = 100\% at all load levels, indistinguishable from control head L5H5.}
+\label{fig:capacity}
+\end{figure}
+
+The results (Table~\ref{tab:capacity} and Figure~\ref{fig:capacity}) reveal three distinct behaviors:
 
 \paragraph{L3H0: Reclassification.} One head initially identified as a Bloom filter (L3H0) was reclassified as a general prefix-attention head following this confound control. Under fixed sequence length, L3H0 shows FP = 100\% at \emph{all} unique token levels, including $n = 5$---a condition where even a 5-bit Bloom filter would show $<$50\% FP. Its false positive rate is indistinguishable from non-Bloom control heads (L5H5, L7H10, L6H9), all of which also show FP = 100\% at every load level. L3H0 simply attends to all prefix content regardless of whether it has seen the probe token before. Its original capacity curve ($R^2 = 0.99$, $m = 59$, $k = 2.16$) was a sequence-length artifact: the earlier experiment co-varied unique tokens and sequence length, and L3H0's FP rate tracked the latter, not the former. A second control (fixed $n = 50$ unique tokens, varying sequence length from 55 to 200) confirms that L3H0's FP rate is constant at 100\% regardless of sequence length when the number of unique tokens is held constant.
 
