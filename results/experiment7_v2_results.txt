@@ -1,0 +1,148 @@
+/Users/peter/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using device: mps
+Loading GPT-2 small...
+Loaded pretrained model gpt2-small into HookedTransformer
+Model loaded: 12 layers, 12 heads, d_head=64
+PAD token: 50256
+
+======================================================================
+CONTROL 1: FIXED LENGTH = 200, VARY UNIQUE TOKENS
+======================================================================
+Sequence: [BOS] + [n_unique distinct] + [5 probes] + [PAD to 200]
+FP = attention from probes to prefix positions only
+
+  n_unique =   5 (prefix=5, probes=5, pad=190, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0091
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0007
+    L1H11 (BF): FP=0.6267 [0.5467, 0.7000]  mean_attn=0.2223
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.5498
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.5678
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.5680
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.5712
+  n_unique =  20 (prefix=20, probes=5, pad=175, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0113
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0009
+    L1H11 (BF): FP=0.9733 [0.9467, 0.9933]  mean_attn=0.6030
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8309
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8364
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8369
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8380
+  n_unique =  50 (prefix=50, probes=5, pad=145, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0138
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0023
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8682
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9225
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9264
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9256
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9265
+  n_unique = 100 (prefix=100, probes=5, pad=95, 30 trials)...
+    L0H1 (BF): FP=0.0333 [0.0067, 0.0667]  mean_attn=0.0188
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0045
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8197
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9560
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9612
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9603
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9613
+  n_unique = 180 (prefix=180, probes=5, pad=15, 30 trials)...
+    L0H1 (BF): FP=0.0400 [0.0133, 0.0733]  mean_attn=0.0241
+    L0H5 (BF): FP=0.0067 [0.0000, 0.0200]  mean_attn=0.0082
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9138
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9740
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9780
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9774
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9777
+
+======================================================================
+CONTROL 2: FIXED UNIQUE = 50, VARY SEQUENCE LENGTH
+======================================================================
+Sequence: [BOS] + [50 distinct] + [5 probes] + [PAD to total_length]
+FP should be ~constant (same unique tokens in filter)
+
+  total_length = 55 (prefix=50, probes=5, pad=0, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0137
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0024
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8683
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9228
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9265
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9258
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9266
+  total_length = 100 (prefix=50, probes=5, pad=45, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0166
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0026
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8993
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9231
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9265
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9256
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9266
+  total_length = 150 (prefix=50, probes=5, pad=95, 30 trials)...
+    L0H1 (BF): FP=0.0267 [0.0067, 0.0533]  mean_attn=0.0166
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0029
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.8809
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9225
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9266
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9258
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9267
+  total_length = 200 (prefix=50, probes=5, pad=145, 30 trials)...
+    L0H1 (BF): FP=0.0133 [0.0000, 0.0333]  mean_attn=0.0161
+    L0H5 (BF): FP=0.0000 [0.0000, 0.0000]  mean_attn=0.0025
+    L1H11 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9022
+    L3H0 (BF): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9226
+    L5H5 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9264
+    L7H10 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9258
+    L6H9 (ctrl): FP=1.0000 [1.0000, 1.0000]  mean_attn=0.9266
+
+======================================================================
+BLOOM FILTER CURVE FITTING TO FIXED-LENGTH DATA
+======================================================================
+Formula: p = (1 - e^(-kn/m))^k
+
+  L0H1: observed FP = [0.0133, 0.0133, 0.0133, 0.0333, 0.04]
+    → m=1000.0, k=3.35, R²=-1.5860
+  L0H5: observed FP = [0.0, 0.0, 0.0, 0.0, 0.0067]
+    → too flat (std=0.0027)
+  L1H11: observed FP = [0.6267, 0.9733, 1.0, 1.0, 1.0]
+    → m=4.9, k=0.86, R²=1.0000
+  L3H0: observed FP = [1.0, 1.0, 1.0, 1.0, 1.0]
+    → too flat (std=0.0000)
+
+  Variable-length comparison (seq_length = n_unique)...
+    n_unique = seq_length = 5... done
+    n_unique = seq_length = 20... done
+    n_unique = seq_length = 50... done
+    n_unique = seq_length = 100... done
+    n_unique = seq_length = 200... done
+  L0H1 (var-len): m=1000.0, k=3.38, R²=-14.8336
+  L1H11 (var-len): m=6.4, k=0.91, R²=0.9998
+
+======================================================================
+R² COMPARISON: FIXED-LENGTH vs VARIABLE-LENGTH
+======================================================================
+        Head    Var-Len R²    Fixed-Len R²
+  ----------  ------------  --------------
+        L0H1      -14.8336          -1.586
+        L0H5           N/A             N/A
+       L1H11        0.9998             1.0
+        L3H0           N/A             N/A
+
+======================================================================
+FP STABILITY (fixed unique=50, varying length)
+======================================================================
+  L0H1: len=55→0.0133  len=100→0.0133  len=150→0.0267  len=200→0.0133  | mean=0.0167, std=0.0058, CV=0.3464
+  L0H5: len=55→0.0000  len=100→0.0000  len=150→0.0000  len=200→0.0000  | mean=0.0000, std=0.0000, CV=inf
+  L1H11: len=55→1.0000  len=100→1.0000  len=150→1.0000  len=200→1.0000  | mean=1.0000, std=0.0000, CV=0.0000
+  L3H0: len=55→1.0000  len=100→1.0000  len=150→1.0000  len=200→1.0000  | mean=1.0000, std=0.0000, CV=0.0000
+
+======================================================================
+THEORETICAL BLOOM FILTER COMPARISON (m=64, k=1)
+======================================================================
+  n_unique    Theory      L0H1      L0H5     L1H11      L3H0
+         5    0.0752    0.0133    0.0000    0.6267    1.0000
+        20    0.2684    0.0133    0.0000    0.9733    1.0000
+        50    0.5422    0.0133    0.0000    1.0000    1.0000
+       100    0.7904    0.0333    0.0000    1.0000    1.0000
+       180    0.9399    0.0400    0.0067    1.0000    1.0000
+
+Results saved to /Users/peter/clawd/projects/bloom-filter-heads/results/experiment7_v2_results.json
+Done!

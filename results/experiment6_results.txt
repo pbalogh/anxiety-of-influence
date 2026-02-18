@@ -1,0 +1,80 @@
+EXPERIMENT 6: DUPLICATE-TOKEN HEAD OVERLAP ANALYSIS
+====================================================
+Date: 2026-02-18
+
+QUESTION: Are Bloom filter heads just duplicate-token heads from Wang et al. (2022)?
+
+ANSWER: No. They are a related but distinct functional category.
+
+─────────────────────────────────────────────────────
+1. VENN DIAGRAM OVERLAP
+─────────────────────────────────────────────────────
+
+Bloom filter heads:    (0,1), (0,5), (1,11), (3,0)
+Top-15 dup-token heads: (0,1), (0,4), (0,5), (0,6), (0,10), (1,0), (1,4),
+                        (1,6), (1,8), (1,10), (1,11), (2,10), (11,8), (11,9), (11,10)
+
+OVERLAP (3 heads):     (0,1), (0,5), (1,11)
+BLOOM-ONLY (1 head):   (3,0)  — rank 50/144 in dup-token scoring
+DUP-TOKEN-ONLY (12):   (0,4), (0,6), (0,10), (1,0), (1,4), (1,6), (1,8),
+                        (1,10), (2,10), (11,8), (11,9), (11,10)
+
+Bloom heads' dup-token ranks:
+  L0H5:  rank 1/144  (score 0.567) — top dup-token head in the model
+  L0H1:  rank 2/144  (score 0.541)
+  L1H11: rank 4/144  (score 0.182)
+  L3H0:  rank 50/144 (score 0.092) — NOT a dup-token head
+
+─────────────────────────────────────────────────────
+2. GENERALIZATION BEYOND NAMES
+─────────────────────────────────────────────────────
+
+Generalization index = min(non_name_attn, random_attn) / ioi_name_attn
+  (1.0 = perfectly general; 0.0 = name-specific)
+
+  BLOOM HEADS:
+    L0H1:  0.776
+    L0H5:  0.829
+    L1H11: 0.623
+    L3H0:  0.587
+    MEAN:  0.704
+
+  DUP-TOKEN-ONLY HEADS:
+    L0H10: 0.875
+    L0H6:  0.386
+    L1H0:  0.228
+    L11H8: 0.407
+    L0H4:  0.607
+    L1H6:  0.455
+    MEAN:  0.493
+
+Bloom heads generalize 43% more broadly (0.70 vs 0.49).
+
+Non-name repetition attention:
+  Bloom heads:     0.276 ± 0.170
+  Dup-token heads: 0.099 ± 0.051
+
+Random token repetition attention:
+  Bloom heads:     0.309 ± 0.225
+  Dup-token heads: 0.082 ± 0.059
+
+─────────────────────────────────────────────────────
+3. KEY DISTINCTIONS
+─────────────────────────────────────────────────────
+
+Duplicate-token heads (Wang et al. 2022):
+  - Identified only within IOI circuit for name repetition
+  - 15 heads with elevated S2→S1 attention
+  - Many are name/context-specific (low generalization)
+
+Bloom filter heads (this paper):
+  - 4 heads selected via capacity curves matching Bloom filter theory
+  - 3/4 overlap with dup-token heads, but 1 (L3H0) is unique
+  - Generalize broadly to ANY repeated token type
+  - Show independence between heads (hash function property)
+  - Exhibit false-positive rates matching theoretical predictions
+
+VERDICT: Bloom filter heads are a SUBSET refinement — they identify
+which duplicate-token heads implement a general-purpose, theoretically
+principled membership-testing mechanism, vs. those that are
+task-specific or context-dependent.

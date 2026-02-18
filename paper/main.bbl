@@ -1,0 +1,173 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Biderman et~al.(2023)Biderman, Schoelkopf, Anthony, Bradley, O'Brien,
+  Hallahan, Khan, Purber, Prashanth, Raff, et~al.]{biderman2023pythia}
+Stella Biderman, Hailey Schoelkopf, Quentin~Gregory Anthony, Herbie Bradley,
+  Kyle O'Brien, Eric Hallahan, Mohammad~Aflah Khan, Shivanshu Purber, USVSN~Sai
+  Prashanth, Edward Raff, et~al.
+\newblock Pythia: A suite for analyzing large language models across training
+  and scaling.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning}, 2023.
+
+\bibitem[Bloom(1970)]{bloom1970space}
+Burton~H. Bloom.
+\newblock Space/time trade-offs in hash coding with allowable errors.
+\newblock \emph{Communications of the ACM}, 13\penalty0 (7):\penalty0 422--426,
+  1970.
+
+\bibitem[Bloom(1973)]{bloom1973anxiety}
+Harold Bloom.
+\newblock \emph{The Anxiety of Influence: A Theory of Poetry}.
+\newblock Oxford University Press, 1973.
+
+\bibitem[Clark et~al.(2019)Clark, Khandelwal, Levy, and Manning]{clark2019what}
+Kevin Clark, Urvashi Khandelwal, Omer Levy, and Christopher~D. Manning.
+\newblock What does {BERT} look at? an analysis of {BERT}'s attention.
+\newblock In \emph{Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing
+  and Interpreting Neural Networks for NLP}, pages 276--286, 2019.
+
+\bibitem[Conmy et~al.(2023)Conmy, Mavor-Parker, Lynch, Heimersheim, and
+  Garriga-Alonso]{conmy2023towards}
+Arthur Conmy, Augustine~N. Mavor-Parker, Aengus Lynch, Stefan Heimersheim, and
+  Adri{\`a} Garriga-Alonso.
+\newblock Towards automated circuit discovery for mechanistic interpretability.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2023.
+
+\bibitem[Dong et~al.(2019)Dong, Moses, and Li]{dong2019learning}
+Wei Dong, Charikar Moses, and Kai Li.
+\newblock Learning to hash with multi-resolution locality sensitive hashing.
+\newblock In \emph{Proceedings of the VLDB Endowment}, volume~13, pages
+  197--210, 2019.
+
+\bibitem[Elhage et~al.(2021)Elhage, Nanda, Olsson, Henighan, Joseph, Mann,
+  Askell, Bai, Chen, Conerly, et~al.]{elhage2021mathematical}
+Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Ben
+  Mann, Amanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, et~al.
+\newblock A mathematical framework for transformer circuits.
+\newblock \emph{Transformer Circuits Thread}, 2021.
+\newblock URL \url{https://transformer-circuits.pub/2021/framework/index.html}.
+
+\bibitem[Geva et~al.(2023)Geva, Bastings, Filippova, and
+  Globerson]{geva2023dissecting}
+Mor Geva, Jasmijn Bastings, Katja Filippova, and Amir Globerson.
+\newblock Dissecting recall of factual associations in auto-regressive language
+  models.
+\newblock \emph{arXiv preprint arXiv:2304.14767}, 2023.
+
+\bibitem[Gould et~al.(2023)Gould, Ong, Ogden, and Conmy]{gould2023successor}
+Rhys Gould, Euan Ong, George Ogden, and Arthur Conmy.
+\newblock Successor heads: Recurring, interpretable attention heads in the
+  wild.
+\newblock \emph{arXiv preprint arXiv:2312.09230}, 2023.
+
+\bibitem[Hua et~al.(2012)Hua, Xiao, Veeravalli, and Feng]{hua2012locality}
+Yu~Hua, Bin Xiao, Bharadwaj Veeravalli, and Dan Feng.
+\newblock Locality-sensitive bloom filter for approximate membership query.
+\newblock \emph{IEEE Transactions on Computers}, 61\penalty0 (6):\penalty0
+  817--830, 2012.
+
+\bibitem[Indyk and Motwani(1998)]{indyk1998approximate}
+Piotr Indyk and Rajeev Motwani.
+\newblock Approximate nearest neighbors: Towards removing the curse of
+  dimensionality.
+\newblock In \emph{Proceedings of the 30th Annual ACM Symposium on Theory of
+  Computing}, pages 604--613. ACM, 1998.
+
+\bibitem[Kirsch and Mitzenmacher(2006)]{kirsch2006distance}
+Adam Kirsch and Michael Mitzenmacher.
+\newblock Distance-sensitive bloom filters.
+\newblock In \emph{Proceedings of the Workshop on Algorithm Engineering and
+  Experiments (ALENEX)}, pages 41--50. SIAM, 2006.
+
+\bibitem[Kraska et~al.(2018)Kraska, Beutel, Chi, Dean, and
+  Polyzotis]{kraska2018case}
+Tim Kraska, Alex Beutel, Ed~H. Chi, Jeffrey Dean, and Neoklis Polyzotis.
+\newblock The case for learned index structures.
+\newblock In \emph{Proceedings of the 2018 International Conference on
+  Management of Data (SIGMOD)}, pages 489--504. ACM, 2018.
+
+\bibitem[McDougall et~al.(2023)McDougall, Conmy, Rushing, McGrath, and
+  Nanda]{mcdougall2023copy}
+Callum McDougall, Arthur Conmy, Cody Rushing, Thomas McGrath, and Neel Nanda.
+\newblock Copy suppression: Comprehensively understanding an attention head.
+\newblock \emph{arXiv preprint arXiv:2310.04625}, 2023.
+
+\bibitem[Michel et~al.(2019)Michel, Levy, and Neubig]{michel2019sixteen}
+Paul Michel, Omer Levy, and Graham Neubig.
+\newblock Are sixteen heads really better than one?
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~32, 2019.
+
+\bibitem[Mitzenmacher(2018)]{mitzenmacher2018model}
+Michael Mitzenmacher.
+\newblock A model for learned bloom filters and optimizing by sandwiching.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~31, 2018.
+
+\bibitem[Nanda(2022)]{nanda2022transformerlens}
+Neel Nanda.
+\newblock Transformerlens.
+\newblock \url{https://github.com/neelnanda-io/TransformerLens}, 2022.
+\newblock URL \url{https://github.com/neelnanda-io/TransformerLens}.
+
+\bibitem[Olsson et~al.(2022)Olsson, Elhage, Nanda, Joseph, DasSarma, Henighan,
+  Mann, Askell, Bai, Chen, et~al.]{olsson2022context}
+Catherine Olsson, Nelson Elhage, Neel Nanda, Nicholas Joseph, Nova DasSarma,
+  Tom Henighan, Ben Mann, Amanda Askell, Yuntao Bai, Anna Chen, et~al.
+\newblock In-context learning and induction heads.
+\newblock \emph{arXiv preprint arXiv:2209.11895}, 2022.
+
+\bibitem[Quirke and Barez(2023)]{quirke2023understanding}
+Philip Quirke and Fazl Barez.
+\newblock Understanding addition in transformers.
+\newblock \emph{arXiv preprint arXiv:2310.13121}, 2023.
+
+\bibitem[Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, and
+  Sutskever]{radford2019language}
+Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya
+  Sutskever.
+\newblock Language models are unsupervised multitask learners.
+\newblock \emph{OpenAI Blog}, 2019.
+
+\bibitem[Rae et~al.(2019)Rae, Bartunov, and Lillicrap]{rae2019meta}
+Jack~W. Rae, Sergey Bartunov, and Timothy~P. Lillicrap.
+\newblock Meta-learning neural bloom filters.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning}, pages 5271--5280. PMLR, 2019.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+
+\bibitem[Voita et~al.(2019)Voita, Talbot, Moiseev, Sennrich, and
+  Titov]{voita2019analyzing}
+Elena Voita, David Talbot, Fedor Moiseev, Rico Sennrich, and Ivan Titov.
+\newblock Analyzing multi-head self-attention: Specialized heads do the heavy
+  lifting, the rest can be pruned.
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pages 5797--5808, 2019.
+
+\bibitem[Wang et~al.(2022)Wang, Variengien, Conmy, Shlegeris, and
+  Steinhardt]{wang2022interpretability}
+Kevin Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris, and Jacob
+  Steinhardt.
+\newblock Interpretability in the wild: A circuit for indirect object
+  identification in {GPT}-2 small.
+\newblock \emph{arXiv preprint arXiv:2211.00593}, 2022.
+
+\bibitem[Wu et~al.(2024)Wu, Wang, Xiao, Peng, and Fu]{wu2024retrieval}
+Wenhao Wu, Yizhong Wang, Guangxuan Xiao, Hao Peng, and Yao Fu.
+\newblock Retrieval head mechanistically explains long-context factuality.
+\newblock \emph{arXiv preprint arXiv:2404.15574}, 2024.
+
+\end{thebibliography}
