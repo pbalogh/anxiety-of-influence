@@ -1,0 +1,71 @@
+{
+  "experiment": "EXP-5: Naturalistic validation on WikiText-103",
+  "n_passages": 761,
+  "max_seq_len": 256,
+  "device": "mps",
+  "heads": {
+    "L0H1": {
+      "is_bloom_head": true,
+      "selectivity": 49.3,
+      "miss_rate_pct": 0.01,
+      "mean_repeated_attn": 0.148091,
+      "mean_non_repeated_attn": 0.003004,
+      "n_pairs": 35998
+    },
+    "L0H5": {
+      "is_bloom_head": true,
+      "selectivity": 53.84,
+      "miss_rate_pct": 0.0,
+      "mean_repeated_attn": 0.331474,
+      "mean_non_repeated_attn": 0.006156,
+      "n_pairs": 35998
+    },
+    "L1H11": {
+      "is_bloom_head": true,
+      "selectivity": 22.56,
+      "miss_rate_pct": 0.04,
+      "mean_repeated_attn": 0.113474,
+      "mean_non_repeated_attn": 0.00503,
+      "n_pairs": 35998
+    },
+    "L3H0": {
+      "is_bloom_head": true,
+      "selectivity": 15.44,
+      "miss_rate_pct": 0.82,
+      "mean_repeated_attn": 0.183731,
+      "mean_non_repeated_attn": 0.011899,
+      "n_pairs": 35998
+    },
+    "L0H0": {
+      "is_bloom_head": false,
+      "selectivity": 0.43,
+      "miss_rate_pct": 81.14,
+      "mean_repeated_attn": 0.006607,
+      "mean_non_repeated_attn": 0.015329,
+      "n_pairs": 35998
+    },
+    "L0H3": {
+      "is_bloom_head": false,
+      "selectivity": 1.3,
+      "miss_rate_pct": 30.41,
+      "mean_repeated_attn": 0.004045,
+      "mean_non_repeated_attn": 0.003118,
+      "n_pairs": 35998
+    },
+    "L2H2": {
+      "is_bloom_head": false,
+      "selectivity": 0.08,
+      "miss_rate_pct": 54.07,
+      "mean_repeated_attn": 0.001103,
+      "mean_non_repeated_attn": 0.013573,
+      "n_pairs": 35998
+    }
+  },
+  "summary": {
+    "bloom_heads_mean_selectivity": 35.29,
+    "control_heads_mean_selectivity": 0.6,
+    "bloom_heads_mean_miss_rate": 0.22,
+    "constructed_stimuli_selectivity_range": "51x-146x",
+    "note": "Naturalistic selectivity expected to be lower due to function words, but should still be significantly above controls."
+  }
+}

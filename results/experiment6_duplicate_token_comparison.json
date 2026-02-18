@@ -1,0 +1,1212 @@
+{
+  "experiment": "experiment6_duplicate_token_comparison",
+  "model": "gpt2-small",
+  "device": "mps",
+  "bloom_heads": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "n_ioi_sentences": 50,
+  "n_expanded_stimuli": 100,
+  "dup_token_top_k": 15,
+  "dup_token_scores_all_heads": {
+    "L0H0": 0.0844,
+    "L0H1": 0.5407,
+    "L0H2": 0.062,
+    "L0H3": 0.0197,
+    "L0H4": 0.1241,
+    "L0H5": 0.5665,
+    "L0H6": 0.1382,
+    "L0H7": 0.0203,
+    "L0H8": 0.0871,
+    "L0H9": 0.0151,
+    "L0H10": 0.233,
+    "L0H11": 0.0571,
+    "L1H0": 0.0394,
+    "L1H1": 0.0174,
+    "L1H2": 0.0601,
+    "L1H3": 0.0487,
+    "L1H4": 0.0657,
+    "L1H5": 0.0592,
+    "L1H6": 0.0712,
+    "L1H7": 0.0335,
+    "L1H8": 0.0349,
+    "L1H9": 0.0205,
+    "L1H10": 0.0946,
+    "L1H11": 0.694,
+    "L2H0": 0.0312,
+    "L2H1": 0.0606,
+    "L2H2": 0.0004,
+    "L2H3": 0.0083,
+    "L2H4": 0.0032,
+    "L2H5": 0.002,
+    "L2H6": 0.0194,
+    "L2H7": 0.0637,
+    "L2H8": 0.001,
+    "L2H9": 0.0087,
+    "L2H10": 0.0824,
+    "L2H11": 0.0322,
+    "L3H0": 0.777,
+    "L3H1": 0.0022,
+    "L3H2": 0.0038,
+    "L3H3": 0.0002,
+    "L3H4": 0.0116,
+    "L3H5": 0.0219,
+    "L3H6": 0.011,
+    "L3H7": 0.0004,
+    "L3H8": 0.0008,
+    "L3H9": 0.0045,
+    "L3H10": 0.0436,
+    "L3H11": 0.0025,
+    "L4H0": 0.0001,
+    "L4H1": 0.0023,
+    "L4H2": 0.0104,
+    "L4H3": 0.0018,
+    "L4H4": 0.0486,
+    "L4H5": 0.0012,
+    "L4H6": 0.0095,
+    "L4H7": 0.0196,
+    "L4H8": 0.0124,
+    "L4H9": 0.0024,
+    "L4H10": 0.0079,
+    "L4H11": 0.0,
+    "L5H0": 0.0029,
+    "L5H1": 0.0,
+    "L5H2": 0.0028,
+    "L5H3": 0.0034,
+    "L5H4": 0.0025,
+    "L5H5": 0.0071,
+    "L5H6": 0.0003,
+    "L5H7": 0.0014,
+    "L5H8": 0.0045,
+    "L5H9": 0.0169,
+    "L5H10": 0.3165,
+    "L5H11": 0.0091,
+    "L6H0": 0.0111,
+    "L6H1": 0.0013,
+    "L6H2": 0.0267,
+    "L6H3": 0.0208,
+    "L6H4": 0.0518,
+    "L6H5": 0.0296,
+    "L6H6": 0.1564,
+    "L6H7": 0.0347,
+    "L6H8": 0.0026,
+    "L6H9": 0.0102,
+    "L6H10": 0.0049,
+    "L6H11": 0.0007,
+    "L7H0": 0.0003,
+    "L7H1": 0.0231,
+    "L7H2": 0.0004,
+    "L7H3": 0.0088,
+    "L7H4": 0.0046,
+    "L7H5": 0.0179,
+    "L7H6": 0.0201,
+    "L7H7": 0.0072,
+    "L7H8": 0.001,
+    "L7H9": 0.0047,
+    "L7H10": 0.0148,
+    "L7H11": 0.0152,
+    "L8H0": 0.0064,
+    "L8H1": 0.0012,
+    "L8H2": 0.0227,
+    "L8H3": 0.0143,
+    "L8H4": 0.0004,
+    "L8H5": 0.0063,
+    "L8H6": 0.0182,
+    "L8H7": 0.0019,
+    "L8H8": 0.0037,
+    "L8H9": 0.0118,
+    "L8H10": 0.0113,
+    "L8H11": 0.0044,
+    "L9H0": 0.0154,
+    "L9H1": 0.002,
+    "L9H2": 0.004,
+    "L9H3": 0.0036,
+    "L9H4": 0.0076,
+    "L9H5": 0.0105,
+    "L9H6": 0.0093,
+    "L9H7": 0.0071,
+    "L9H8": 0.053,
+    "L9H9": 0.0105,
+    "L9H10": 0.0009,
+    "L9H11": 0.0041,
+    "L10H0": 0.0204,
+    "L10H1": 0.014,
+    "L10H2": 0.0178,
+    "L10H3": 0.021,
+    "L10H4": 0.0081,
+    "L10H5": 0.0034,
+    "L10H6": 0.0162,
+    "L10H7": 0.004,
+    "L10H8": 0.004,
+    "L10H9": 0.0172,
+    "L10H10": 0.0115,
+    "L10H11": 0.0021,
+    "L11H0": 0.0369,
+    "L11H1": 0.0139,
+    "L11H2": 0.0145,
+    "L11H3": 0.0077,
+    "L11H4": 0.022,
+    "L11H5": 0.0075,
+    "L11H6": 0.0218,
+    "L11H7": 0.0015,
+    "L11H8": 0.2606,
+    "L11H9": 0.0036,
+    "L11H10": 0.0057,
+    "L11H11": 0.0056
+  },
+  "dup_token_ranking": [
+    {
+      "head": "L3H0",
+      "score": 0.777,
+      "rank": 1
+    },
+    {
+      "head": "L1H11",
+      "score": 0.694,
+      "rank": 2
+    },
+    {
+      "head": "L0H5",
+      "score": 0.5665,
+      "rank": 3
+    },
+    {
+      "head": "L0H1",
+      "score": 0.5407,
+      "rank": 4
+    },
+    {
+      "head": "L5H10",
+      "score": 0.3165,
+      "rank": 5
+    },
+    {
+      "head": "L11H8",
+      "score": 0.2606,
+      "rank": 6
+    },
+    {
+      "head": "L0H10",
+      "score": 0.233,
+      "rank": 7
+    },
+    {
+      "head": "L6H6",
+      "score": 0.1564,
+      "rank": 8
+    },
+    {
+      "head": "L0H6",
+      "score": 0.1382,
+      "rank": 9
+    },
+    {
+      "head": "L0H4",
+      "score": 0.1241,
+      "rank": 10
+    },
+    {
+      "head": "L1H10",
+      "score": 0.0946,
+      "rank": 11
+    },
+    {
+      "head": "L0H8",
+      "score": 0.0871,
+      "rank": 12
+    },
+    {
+      "head": "L0H0",
+      "score": 0.0844,
+      "rank": 13
+    },
+    {
+      "head": "L2H10",
+      "score": 0.0824,
+      "rank": 14
+    },
+    {
+      "head": "L1H6",
+      "score": 0.0712,
+      "rank": 15
+    },
+    {
+      "head": "L1H4",
+      "score": 0.0657,
+      "rank": 16
+    },
+    {
+      "head": "L2H7",
+      "score": 0.0637,
+      "rank": 17
+    },
+    {
+      "head": "L0H2",
+      "score": 0.062,
+      "rank": 18
+    },
+    {
+      "head": "L2H1",
+      "score": 0.0606,
+      "rank": 19
+    },
+    {
+      "head": "L1H2",
+      "score": 0.0601,
+      "rank": 20
+    },
+    {
+      "head": "L1H5",
+      "score": 0.0592,
+      "rank": 21
+    },
+    {
+      "head": "L0H11",
+      "score": 0.0571,
+      "rank": 22
+    },
+    {
+      "head": "L9H8",
+      "score": 0.053,
+      "rank": 23
+    },
+    {
+      "head": "L6H4",
+      "score": 0.0518,
+      "rank": 24
+    },
+    {
+      "head": "L1H3",
+      "score": 0.0487,
+      "rank": 25
+    },
+    {
+      "head": "L4H4",
+      "score": 0.0486,
+      "rank": 26
+    },
+    {
+      "head": "L3H10",
+      "score": 0.0436,
+      "rank": 27
+    },
+    {
+      "head": "L1H0",
+      "score": 0.0394,
+      "rank": 28
+    },
+    {
+      "head": "L11H0",
+      "score": 0.0369,
+      "rank": 29
+    },
+    {
+      "head": "L1H8",
+      "score": 0.0349,
+      "rank": 30
+    },
+    {
+      "head": "L6H7",
+      "score": 0.0347,
+      "rank": 31
+    },
+    {
+      "head": "L1H7",
+      "score": 0.0335,
+      "rank": 32
+    },
+    {
+      "head": "L2H11",
+      "score": 0.0322,
+      "rank": 33
+    },
+    {
+      "head": "L2H0",
+      "score": 0.0312,
+      "rank": 34
+    },
+    {
+      "head": "L6H5",
+      "score": 0.0296,
+      "rank": 35
+    },
+    {
+      "head": "L6H2",
+      "score": 0.0267,
+      "rank": 36
+    },
+    {
+      "head": "L7H1",
+      "score": 0.0231,
+      "rank": 37
+    },
+    {
+      "head": "L8H2",
+      "score": 0.0227,
+      "rank": 38
+    },
+    {
+      "head": "L11H4",
+      "score": 0.022,
+      "rank": 39
+    },
+    {
+      "head": "L3H5",
+      "score": 0.0219,
+      "rank": 40
+    },
+    {
+      "head": "L11H6",
+      "score": 0.0218,
+      "rank": 41
+    },
+    {
+      "head": "L10H3",
+      "score": 0.021,
+      "rank": 42
+    },
+    {
+      "head": "L6H3",
+      "score": 0.0208,
+      "rank": 43
+    },
+    {
+      "head": "L1H9",
+      "score": 0.0205,
+      "rank": 44
+    },
+    {
+      "head": "L10H0",
+      "score": 0.0204,
+      "rank": 45
+    },
+    {
+      "head": "L0H7",
+      "score": 0.0203,
+      "rank": 46
+    },
+    {
+      "head": "L7H6",
+      "score": 0.0201,
+      "rank": 47
+    },
+    {
+      "head": "L0H3",
+      "score": 0.0197,
+      "rank": 48
+    },
+    {
+      "head": "L4H7",
+      "score": 0.0196,
+      "rank": 49
+    },
+    {
+      "head": "L2H6",
+      "score": 0.0194,
+      "rank": 50
+    },
+    {
+      "head": "L8H6",
+      "score": 0.0182,
+      "rank": 51
+    },
+    {
+      "head": "L7H5",
+      "score": 0.0179,
+      "rank": 52
+    },
+    {
+      "head": "L10H2",
+      "score": 0.0178,
+      "rank": 53
+    },
+    {
+      "head": "L1H1",
+      "score": 0.0174,
+      "rank": 54
+    },
+    {
+      "head": "L10H9",
+      "score": 0.0172,
+      "rank": 55
+    },
+    {
+      "head": "L5H9",
+      "score": 0.0169,
+      "rank": 56
+    },
+    {
+      "head": "L10H6",
+      "score": 0.0162,
+      "rank": 57
+    },
+    {
+      "head": "L9H0",
+      "score": 0.0154,
+      "rank": 58
+    },
+    {
+      "head": "L7H11",
+      "score": 0.0152,
+      "rank": 59
+    },
+    {
+      "head": "L0H9",
+      "score": 0.0151,
+      "rank": 60
+    },
+    {
+      "head": "L7H10",
+      "score": 0.0148,
+      "rank": 61
+    },
+    {
+      "head": "L11H2",
+      "score": 0.0145,
+      "rank": 62
+    },
+    {
+      "head": "L8H3",
+      "score": 0.0143,
+      "rank": 63
+    },
+    {
+      "head": "L10H1",
+      "score": 0.014,
+      "rank": 64
+    },
+    {
+      "head": "L11H1",
+      "score": 0.0139,
+      "rank": 65
+    },
+    {
+      "head": "L4H8",
+      "score": 0.0124,
+      "rank": 66
+    },
+    {
+      "head": "L8H9",
+      "score": 0.0118,
+      "rank": 67
+    },
+    {
+      "head": "L3H4",
+      "score": 0.0116,
+      "rank": 68
+    },
+    {
+      "head": "L10H10",
+      "score": 0.0115,
+      "rank": 69
+    },
+    {
+      "head": "L8H10",
+      "score": 0.0113,
+      "rank": 70
+    },
+    {
+      "head": "L6H0",
+      "score": 0.0111,
+      "rank": 71
+    },
+    {
+      "head": "L3H6",
+      "score": 0.011,
+      "rank": 72
+    },
+    {
+      "head": "L9H9",
+      "score": 0.0105,
+      "rank": 73
+    },
+    {
+      "head": "L9H5",
+      "score": 0.0105,
+      "rank": 74
+    },
+    {
+      "head": "L4H2",
+      "score": 0.0104,
+      "rank": 75
+    },
+    {
+      "head": "L6H9",
+      "score": 0.0102,
+      "rank": 76
+    },
+    {
+      "head": "L4H6",
+      "score": 0.0095,
+      "rank": 77
+    },
+    {
+      "head": "L9H6",
+      "score": 0.0093,
+      "rank": 78
+    },
+    {
+      "head": "L5H11",
+      "score": 0.0091,
+      "rank": 79
+    },
+    {
+      "head": "L7H3",
+      "score": 0.0088,
+      "rank": 80
+    },
+    {
+      "head": "L2H9",
+      "score": 0.0087,
+      "rank": 81
+    },
+    {
+      "head": "L2H3",
+      "score": 0.0083,
+      "rank": 82
+    },
+    {
+      "head": "L10H4",
+      "score": 0.0081,
+      "rank": 83
+    },
+    {
+      "head": "L4H10",
+      "score": 0.0079,
+      "rank": 84
+    },
+    {
+      "head": "L11H3",
+      "score": 0.0077,
+      "rank": 85
+    },
+    {
+      "head": "L9H4",
+      "score": 0.0076,
+      "rank": 86
+    },
+    {
+      "head": "L11H5",
+      "score": 0.0075,
+      "rank": 87
+    },
+    {
+      "head": "L7H7",
+      "score": 0.0072,
+      "rank": 88
+    },
+    {
+      "head": "L9H7",
+      "score": 0.0071,
+      "rank": 89
+    },
+    {
+      "head": "L5H5",
+      "score": 0.0071,
+      "rank": 90
+    },
+    {
+      "head": "L8H0",
+      "score": 0.0064,
+      "rank": 91
+    },
+    {
+      "head": "L8H5",
+      "score": 0.0063,
+      "rank": 92
+    },
+    {
+      "head": "L11H10",
+      "score": 0.0057,
+      "rank": 93
+    },
+    {
+      "head": "L11H11",
+      "score": 0.0056,
+      "rank": 94
+    },
+    {
+      "head": "L6H10",
+      "score": 0.0049,
+      "rank": 95
+    },
+    {
+      "head": "L7H9",
+      "score": 0.0047,
+      "rank": 96
+    },
+    {
+      "head": "L7H4",
+      "score": 0.0046,
+      "rank": 97
+    },
+    {
+      "head": "L5H8",
+      "score": 0.0045,
+      "rank": 98
+    },
+    {
+      "head": "L3H9",
+      "score": 0.0045,
+      "rank": 99
+    },
+    {
+      "head": "L8H11",
+      "score": 0.0044,
+      "rank": 100
+    },
+    {
+      "head": "L9H11",
+      "score": 0.0041,
+      "rank": 101
+    },
+    {
+      "head": "L9H2",
+      "score": 0.004,
+      "rank": 102
+    },
+    {
+      "head": "L10H7",
+      "score": 0.004,
+      "rank": 103
+    },
+    {
+      "head": "L10H8",
+      "score": 0.004,
+      "rank": 104
+    },
+    {
+      "head": "L3H2",
+      "score": 0.0038,
+      "rank": 105
+    },
+    {
+      "head": "L8H8",
+      "score": 0.0037,
+      "rank": 106
+    },
+    {
+      "head": "L9H3",
+      "score": 0.0036,
+      "rank": 107
+    },
+    {
+      "head": "L11H9",
+      "score": 0.0036,
+      "rank": 108
+    },
+    {
+      "head": "L10H5",
+      "score": 0.0034,
+      "rank": 109
+    },
+    {
+      "head": "L5H3",
+      "score": 0.0034,
+      "rank": 110
+    },
+    {
+      "head": "L2H4",
+      "score": 0.0032,
+      "rank": 111
+    },
+    {
+      "head": "L5H0",
+      "score": 0.0029,
+      "rank": 112
+    },
+    {
+      "head": "L5H2",
+      "score": 0.0028,
+      "rank": 113
+    },
+    {
+      "head": "L6H8",
+      "score": 0.0026,
+      "rank": 114
+    },
+    {
+      "head": "L3H11",
+      "score": 0.0025,
+      "rank": 115
+    },
+    {
+      "head": "L5H4",
+      "score": 0.0025,
+      "rank": 116
+    },
+    {
+      "head": "L4H9",
+      "score": 0.0024,
+      "rank": 117
+    },
+    {
+      "head": "L4H1",
+      "score": 0.0023,
+      "rank": 118
+    },
+    {
+      "head": "L3H1",
+      "score": 0.0022,
+      "rank": 119
+    },
+    {
+      "head": "L10H11",
+      "score": 0.0021,
+      "rank": 120
+    },
+    {
+      "head": "L2H5",
+      "score": 0.002,
+      "rank": 121
+    },
+    {
+      "head": "L9H1",
+      "score": 0.002,
+      "rank": 122
+    },
+    {
+      "head": "L8H7",
+      "score": 0.0019,
+      "rank": 123
+    },
+    {
+      "head": "L4H3",
+      "score": 0.0018,
+      "rank": 124
+    },
+    {
+      "head": "L11H7",
+      "score": 0.0015,
+      "rank": 125
+    },
+    {
+      "head": "L5H7",
+      "score": 0.0014,
+      "rank": 126
+    },
+    {
+      "head": "L6H1",
+      "score": 0.0013,
+      "rank": 127
+    },
+    {
+      "head": "L4H5",
+      "score": 0.0012,
+      "rank": 128
+    },
+    {
+      "head": "L8H1",
+      "score": 0.0012,
+      "rank": 129
+    },
+    {
+      "head": "L2H8",
+      "score": 0.001,
+      "rank": 130
+    },
+    {
+      "head": "L7H8",
+      "score": 0.001,
+      "rank": 131
+    },
+    {
+      "head": "L9H10",
+      "score": 0.0009,
+      "rank": 132
+    },
+    {
+      "head": "L3H8",
+      "score": 0.0008,
+      "rank": 133
+    },
+    {
+      "head": "L6H11",
+      "score": 0.0007,
+      "rank": 134
+    },
+    {
+      "head": "L2H2",
+      "score": 0.0004,
+      "rank": 135
+    },
+    {
+      "head": "L3H7",
+      "score": 0.0004,
+      "rank": 136
+    },
+    {
+      "head": "L7H2",
+      "score": 0.0004,
+      "rank": 137
+    },
+    {
+      "head": "L8H4",
+      "score": 0.0004,
+      "rank": 138
+    },
+    {
+      "head": "L7H0",
+      "score": 0.0003,
+      "rank": 139
+    },
+    {
+      "head": "L5H6",
+      "score": 0.0003,
+      "rank": 140
+    },
+    {
+      "head": "L3H3",
+      "score": 0.0002,
+      "rank": 141
+    },
+    {
+      "head": "L4H0",
+      "score": 0.0001,
+      "rank": 142
+    },
+    {
+      "head": "L5H1",
+      "score": 0.0,
+      "rank": 143
+    },
+    {
+      "head": "L4H11",
+      "score": 0.0,
+      "rank": 144
+    }
+  ],
+  "top_dup_heads": [
+    "L3H0",
+    "L1H11",
+    "L0H5",
+    "L0H1",
+    "L5H10",
+    "L11H8",
+    "L0H10",
+    "L6H6",
+    "L0H6",
+    "L0H4",
+    "L1H10",
+    "L0H8",
+    "L0H0",
+    "L2H10",
+    "L1H6"
+  ],
+  "venn_diagram": {
+    "overlap": [
+      "L0H1",
+      "L0H5",
+      "L1H11",
+      "L3H0"
+    ],
+    "bloom_only": [],
+    "dup_only": [
+      "L0H0",
+      "L0H4",
+      "L0H6",
+      "L0H8",
+      "L0H10",
+      "L1H6",
+      "L1H10",
+      "L2H10",
+      "L5H10",
+      "L6H6",
+      "L11H8"
+    ],
+    "n_overlap": 4,
+    "n_bloom_only": 0,
+    "n_dup_only": 11
+  },
+  "bloom_head_dup_ranks": {
+    "L0H1": {
+      "dup_token_score": 0.5407,
+      "rank": 4
+    },
+    "L0H5": {
+      "dup_token_score": 0.5665,
+      "rank": 3
+    },
+    "L1H11": {
+      "dup_token_score": 0.694,
+      "rank": 2
+    },
+    "L3H0": {
+      "dup_token_score": 0.777,
+      "rank": 1
+    }
+  },
+  "generalization_matrix": {
+    "L0H1": {
+      "ioi_name_repetition": 0.5407,
+      "non_name_repetition": 0.4197,
+      "random_token_repetition": 0.4773,
+      "head_type": "Bloom"
+    },
+    "L0H5": {
+      "ioi_name_repetition": 0.5665,
+      "non_name_repetition": 0.4694,
+      "random_token_repetition": 0.5818,
+      "head_type": "Bloom"
+    },
+    "L1H11": {
+      "ioi_name_repetition": 0.694,
+      "non_name_repetition": 0.4085,
+      "random_token_repetition": 0.4855,
+      "head_type": "Bloom"
+    },
+    "L3H0": {
+      "ioi_name_repetition": 0.777,
+      "non_name_repetition": 0.2708,
+      "random_token_repetition": 0.5901,
+      "head_type": "Bloom"
+    },
+    "L5H10": {
+      "ioi_name_repetition": 0.3165,
+      "non_name_repetition": 0.082,
+      "random_token_repetition": 0.0794,
+      "head_type": "Dup-token"
+    },
+    "L11H8": {
+      "ioi_name_repetition": 0.2606,
+      "non_name_repetition": 0.1238,
+      "random_token_repetition": 0.0455,
+      "head_type": "Dup-token"
+    },
+    "L0H10": {
+      "ioi_name_repetition": 0.233,
+      "non_name_repetition": 0.2078,
+      "random_token_repetition": 0.2039,
+      "head_type": "Dup-token"
+    },
+    "L6H6": {
+      "ioi_name_repetition": 0.1564,
+      "non_name_repetition": 0.0369,
+      "random_token_repetition": 0.0391,
+      "head_type": "Dup-token"
+    },
+    "L0H6": {
+      "ioi_name_repetition": 0.1382,
+      "non_name_repetition": 0.06,
+      "random_token_repetition": 0.0533,
+      "head_type": "Dup-token"
+    },
+    "L0H4": {
+      "ioi_name_repetition": 0.1241,
+      "non_name_repetition": 0.0753,
+      "random_token_repetition": 0.1012,
+      "head_type": "Dup-token"
+    }
+  },
+  "generalization_indices": {
+    "L0H1": 0.7762,
+    "L0H5": 0.8286,
+    "L1H11": 0.5887,
+    "L3H0": 0.3485,
+    "L5H10": 0.2508,
+    "L11H8": 0.1744,
+    "L0H10": 0.8752,
+    "L6H6": 0.2357,
+    "L0H6": 0.3859,
+    "L0H4": 0.6066
+  },
+  "summary_stats": {
+    "bloom_mean_generalization": 0.6355,
+    "dup_mean_generalization": 0.4214,
+    "bloom_mean_non_name_attn": 0.3921,
+    "dup_mean_non_name_attn": 0.0976,
+    "bloom_mean_random_attn": 0.5337,
+    "dup_mean_random_attn": 0.087
+  },
+  "score_grid": [
+    [
+      0.0844,
+      0.5407,
+      0.062,
+      0.0197,
+      0.1241,
+      0.5665,
+      0.1382,
+      0.0203,
+      0.0871,
+      0.0151,
+      0.233,
+      0.0571
+    ],
+    [
+      0.0394,
+      0.0174,
+      0.0601,
+      0.0487,
+      0.0657,
+      0.0592,
+      0.0712,
+      0.0335,
+      0.0349,
+      0.0205,
+      0.0946,
+      0.694
+    ],
+    [
+      0.0312,
+      0.0606,
+      0.0004,
+      0.0083,
+      0.0032,
+      0.002,
+      0.0194,
+      0.0637,
+      0.001,
+      0.0087,
+      0.0824,
+      0.0322
+    ],
+    [
+      0.777,
+      0.0022,
+      0.0038,
+      0.0002,
+      0.0116,
+      0.0219,
+      0.011,
+      0.0004,
+      0.0008,
+      0.0045,
+      0.0436,
+      0.0025
+    ],
+    [
+      0.0001,
+      0.0023,
+      0.0104,
+      0.0018,
+      0.0486,
+      0.0012,
+      0.0095,
+      0.0196,
+      0.0124,
+      0.0024,
+      0.0079,
+      0.0
+    ],
+    [
+      0.0029,
+      0.0,
+      0.0028,
+      0.0034,
+      0.0025,
+      0.0071,
+      0.0003,
+      0.0014,
+      0.0045,
+      0.0169,
+      0.3165,
+      0.0091
+    ],
+    [
+      0.0111,
+      0.0013,
+      0.0267,
+      0.0208,
+      0.0518,
+      0.0296,
+      0.1564,
+      0.0347,
+      0.0026,
+      0.0102,
+      0.0049,
+      0.0007
+    ],
+    [
+      0.0003,
+      0.0231,
+      0.0004,
+      0.0088,
+      0.0046,
+      0.0179,
+      0.0201,
+      0.0072,
+      0.001,
+      0.0047,
+      0.0148,
+      0.0152
+    ],
+    [
+      0.0064,
+      0.0012,
+      0.0227,
+      0.0143,
+      0.0004,
+      0.0063,
+      0.0182,
+      0.0019,
+      0.0037,
+      0.0118,
+      0.0113,
+      0.0044
+    ],
+    [
+      0.0154,
+      0.002,
+      0.004,
+      0.0036,
+      0.0076,
+      0.0105,
+      0.0093,
+      0.0071,
+      0.053,
+      0.0105,
+      0.0009,
+      0.0041
+    ],
+    [
+      0.0204,
+      0.014,
+      0.0178,
+      0.021,
+      0.0081,
+      0.0034,
+      0.0162,
+      0.004,
+      0.004,
+      0.0172,
+      0.0115,
+      0.0021
+    ],
+    [
+      0.0369,
+      0.0139,
+      0.0145,
+      0.0077,
+      0.022,
+      0.0075,
+      0.0218,
+      0.0015,
+      0.2606,
+      0.0036,
+      0.0057,
+      0.0056
+    ]
+  ],
+  "verdict": {
+    "overlap_description": "FULL overlap: all Bloom heads are also duplicate-token heads.",
+    "generalization_verdict": "POSITIVE: Bloom heads generalize MORE broadly than duplicate-token heads. They respond to any repeated token, not just repeated names.",
+    "n_overlap": 4,
+    "n_bloom_total": 4
+  }
+}

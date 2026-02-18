@@ -1,0 +1,905 @@
+{
+  "n_targets": 100,
+  "targets": [
+    {
+      "word": "chapter",
+      "token_id": 6843,
+      "pos": "noun",
+      "freq_rank": 1718,
+      "zipf_freq": 4.65,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "assistance",
+      "token_id": 6829,
+      "pos": "noun",
+      "freq_rank": 1946,
+      "zipf_freq": 4.59,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "female",
+      "token_id": 4048,
+      "pos": "noun",
+      "freq_rank": 744,
+      "zipf_freq": 5.0,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "awards",
+      "token_id": 13304,
+      "pos": "noun",
+      "freq_rank": 1518,
+      "zipf_freq": 4.71,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "studies",
+      "token_id": 3640,
+      "pos": "noun",
+      "freq_rank": 768,
+      "zipf_freq": 4.98,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "country",
+      "token_id": 1499,
+      "pos": "noun",
+      "freq_rank": 150,
+      "zipf_freq": 5.48,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "dream",
+      "token_id": 4320,
+      "pos": "noun",
+      "freq_rank": 920,
+      "zipf_freq": 4.91,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "income",
+      "token_id": 3739,
+      "pos": "noun",
+      "freq_rank": 782,
+      "zipf_freq": 4.97,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "existence",
+      "token_id": 6224,
+      "pos": "noun",
+      "freq_rank": 2107,
+      "zipf_freq": 4.55,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "residents",
+      "token_id": 5085,
+      "pos": "noun",
+      "freq_rank": 1734,
+      "zipf_freq": 4.64,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "banks",
+      "token_id": 6341,
+      "pos": "noun",
+      "freq_rank": 1569,
+      "zipf_freq": 4.69,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "skin",
+      "token_id": 4168,
+      "pos": "noun",
+      "freq_rank": 919,
+      "zipf_freq": 4.91,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "wars",
+      "token_id": 9976,
+      "pos": "noun",
+      "freq_rank": 1965,
+      "zipf_freq": 4.59,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "minutes",
+      "token_id": 2431,
+      "pos": "noun",
+      "freq_rank": 274,
+      "zipf_freq": 5.31,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "core",
+      "token_id": 4755,
+      "pos": "noun",
+      "freq_rank": 1406,
+      "zipf_freq": 4.73,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "center",
+      "token_id": 3641,
+      "pos": "noun",
+      "freq_rank": 410,
+      "zipf_freq": 5.19,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "overall",
+      "token_id": 4045,
+      "pos": "noun",
+      "freq_rank": 940,
+      "zipf_freq": 4.9,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "pumpkin",
+      "token_id": 30089,
+      "pos": "noun",
+      "freq_rank": 7151,
+      "zipf_freq": 3.83,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "wellbeing",
+      "token_id": 40013,
+      "pos": "noun",
+      "freq_rank": 10774,
+      "zipf_freq": 3.52,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "homeowners",
+      "token_id": 24692,
+      "pos": "noun",
+      "freq_rank": 10066,
+      "zipf_freq": 3.57,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "traverse",
+      "token_id": 38138,
+      "pos": "noun",
+      "freq_rank": 12230,
+      "zipf_freq": 3.4,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "hobbies",
+      "token_id": 45578,
+      "pos": "noun",
+      "freq_rank": 10159,
+      "zipf_freq": 3.57,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "choir",
+      "token_id": 42644,
+      "pos": "noun",
+      "freq_rank": 6697,
+      "zipf_freq": 3.88,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "lambda",
+      "token_id": 37456,
+      "pos": "noun",
+      "freq_rank": 14948,
+      "zipf_freq": 3.06,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "jewels",
+      "token_id": 42701,
+      "pos": "noun",
+      "freq_rank": 9917,
+      "zipf_freq": 3.59,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "initials",
+      "token_id": 47523,
+      "pos": "noun",
+      "freq_rank": 11554,
+      "zipf_freq": 3.46,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "holder",
+      "token_id": 15762,
+      "pos": "noun",
+      "freq_rank": 3970,
+      "zipf_freq": 4.21,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "challenges",
+      "token_id": 6459,
+      "pos": "noun",
+      "freq_rank": 2363,
+      "zipf_freq": 4.49,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "scratches",
+      "token_id": 37627,
+      "pos": "noun",
+      "freq_rank": 11633,
+      "zipf_freq": 3.45,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "aggression",
+      "token_id": 15569,
+      "pos": "noun",
+      "freq_rank": 6424,
+      "zipf_freq": 3.9,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "fabrication",
+      "token_id": 38876,
+      "pos": "noun",
+      "freq_rank": 11279,
+      "zipf_freq": 3.48,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "vanilla",
+      "token_id": 16858,
+      "pos": "noun",
+      "freq_rank": 6986,
+      "zipf_freq": 3.84,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "pact",
+      "token_id": 28242,
+      "pos": "noun",
+      "freq_rank": 8231,
+      "zipf_freq": 3.73,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "transports",
+      "token_id": 45245,
+      "pos": "noun",
+      "freq_rank": 13451,
+      "zipf_freq": 3.29,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "docker",
+      "token_id": 36253,
+      "pos": "noun",
+      "freq_rank": 15147,
+      "zipf_freq": 2.98,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "teaspoons",
+      "token_id": 47234,
+      "pos": "noun",
+      "freq_rank": 15238,
+      "zipf_freq": 2.93,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "automakers",
+      "token_id": 47296,
+      "pos": "noun",
+      "freq_rank": 15375,
+      "zipf_freq": 2.78,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "intakes",
+      "token_id": 42219,
+      "pos": "noun",
+      "freq_rank": 15332,
+      "zipf_freq": 2.84,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "miser",
+      "token_id": 18790,
+      "pos": "noun",
+      "freq_rank": 15456,
+      "zipf_freq": 2.56,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "antioxidants",
+      "token_id": 49148,
+      "pos": "noun",
+      "freq_rank": 15209,
+      "zipf_freq": 2.95,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "warranties",
+      "token_id": 50174,
+      "pos": "noun",
+      "freq_rank": 15253,
+      "zipf_freq": 2.92,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "babys",
+      "token_id": 46711,
+      "pos": "noun",
+      "freq_rank": 15518,
+      "zipf_freq": 2.19,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "antic",
+      "token_id": 47792,
+      "pos": "noun",
+      "freq_rank": 15500,
+      "zipf_freq": 2.33,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "credential",
+      "token_id": 49920,
+      "pos": "noun",
+      "freq_rank": 15387,
+      "zipf_freq": 2.75,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "diction",
+      "token_id": 48589,
+      "pos": "noun",
+      "freq_rank": 15406,
+      "zipf_freq": 2.71,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "hashes",
+      "token_id": 46621,
+      "pos": "noun",
+      "freq_rank": 15495,
+      "zipf_freq": 2.39,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "matchups",
+      "token_id": 32033,
+      "pos": "noun",
+      "freq_rank": 15244,
+      "zipf_freq": 2.92,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "antis",
+      "token_id": 33064,
+      "pos": "noun",
+      "freq_rank": 15508,
+      "zipf_freq": 2.27,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "certs",
+      "token_id": 27802,
+      "pos": "noun",
+      "freq_rank": 15513,
+      "zipf_freq": 2.22,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "annotation",
+      "token_id": 23025,
+      "pos": "noun",
+      "freq_rank": 15275,
+      "zipf_freq": 2.89,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "catch",
+      "token_id": 4929,
+      "pos": "verb",
+      "freq_rank": 1024,
+      "zipf_freq": 4.87,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "died",
+      "token_id": 3724,
+      "pos": "verb",
+      "freq_rank": 392,
+      "zipf_freq": 5.2,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "marked",
+      "token_id": 7498,
+      "pos": "verb",
+      "freq_rank": 2322,
+      "zipf_freq": 4.5,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "answers",
+      "token_id": 7429,
+      "pos": "verb",
+      "freq_rank": 1910,
+      "zipf_freq": 4.6,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "enjoyed",
+      "token_id": 8359,
+      "pos": "verb",
+      "freq_rank": 1960,
+      "zipf_freq": 4.59,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "appear",
+      "token_id": 1656,
+      "pos": "verb",
+      "freq_rank": 1056,
+      "zipf_freq": 4.85,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "waiting",
+      "token_id": 4953,
+      "pos": "verb",
+      "freq_rank": 616,
+      "zipf_freq": 5.06,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "travel",
+      "token_id": 3067,
+      "pos": "verb",
+      "freq_rank": 732,
+      "zipf_freq": 5.0,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "paragraphs",
+      "token_id": 23549,
+      "pos": "verb",
+      "freq_rank": 10060,
+      "zipf_freq": 3.57,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "displaying",
+      "token_id": 19407,
+      "pos": "verb",
+      "freq_rank": 8760,
+      "zipf_freq": 3.68,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "extract",
+      "token_id": 7925,
+      "pos": "verb",
+      "freq_rank": 5378,
+      "zipf_freq": 4.02,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "acquire",
+      "token_id": 12831,
+      "pos": "verb",
+      "freq_rank": 4533,
+      "zipf_freq": 4.13,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "starring",
+      "token_id": 20495,
+      "pos": "verb",
+      "freq_rank": 4942,
+      "zipf_freq": 4.08,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "scratched",
+      "token_id": 37468,
+      "pos": "verb",
+      "freq_rank": 11139,
+      "zipf_freq": 3.49,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "referenced",
+      "token_id": 20717,
+      "pos": "verb",
+      "freq_rank": 8874,
+      "zipf_freq": 3.67,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "oppressed",
+      "token_id": 25765,
+      "pos": "verb",
+      "freq_rank": 10188,
+      "zipf_freq": 3.56,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "esteemed",
+      "token_id": 48243,
+      "pos": "verb",
+      "freq_rank": 13566,
+      "zipf_freq": 3.28,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "gasped",
+      "token_id": 45236,
+      "pos": "verb",
+      "freq_rank": 15223,
+      "zipf_freq": 2.94,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "scram",
+      "token_id": 16701,
+      "pos": "verb",
+      "freq_rank": 15498,
+      "zipf_freq": 2.35,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "overpower",
+      "token_id": 42905,
+      "pos": "verb",
+      "freq_rank": 15323,
+      "zipf_freq": 2.85,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "vying",
+      "token_id": 48067,
+      "pos": "verb",
+      "freq_rank": 15250,
+      "zipf_freq": 2.92,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "teleport",
+      "token_id": 32713,
+      "pos": "verb",
+      "freq_rank": 15167,
+      "zipf_freq": 2.97,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "posit",
+      "token_id": 46436,
+      "pos": "verb",
+      "freq_rank": 15381,
+      "zipf_freq": 2.76,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "encrypt",
+      "token_id": 34117,
+      "pos": "verb",
+      "freq_rank": 15380,
+      "zipf_freq": 2.76,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "envelop",
+      "token_id": 16441,
+      "pos": "verb",
+      "freq_rank": 15474,
+      "zipf_freq": 2.48,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "greater",
+      "token_id": 3744,
+      "pos": "adj",
+      "freq_rank": 938,
+      "zipf_freq": 4.9,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "loud",
+      "token_id": 7812,
+      "pos": "adj",
+      "freq_rank": 2202,
+      "zipf_freq": 4.53,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "presidential",
+      "token_id": 4787,
+      "pos": "adj",
+      "freq_rank": 2226,
+      "zipf_freq": 4.52,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "random",
+      "token_id": 4738,
+      "pos": "adj",
+      "freq_rank": 1980,
+      "zipf_freq": 4.58,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "rural",
+      "token_id": 10016,
+      "pos": "adj",
+      "freq_rank": 1966,
+      "zipf_freq": 4.59,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "smart",
+      "token_id": 4451,
+      "pos": "adj",
+      "freq_rank": 1130,
+      "zipf_freq": 4.83,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "proper",
+      "token_id": 1774,
+      "pos": "adj",
+      "freq_rank": 1433,
+      "zipf_freq": 4.72,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "honest",
+      "token_id": 5508,
+      "pos": "adj",
+      "freq_rank": 1418,
+      "zipf_freq": 4.73,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "upward",
+      "token_id": 18644,
+      "pos": "adj",
+      "freq_rank": 8402,
+      "zipf_freq": 3.71,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "prosperous",
+      "token_id": 32757,
+      "pos": "adj",
+      "freq_rank": 9760,
+      "zipf_freq": 3.6,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "mythical",
+      "token_id": 37071,
+      "pos": "adj",
+      "freq_rank": 11753,
+      "zipf_freq": 3.44,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "purple",
+      "token_id": 14032,
+      "pos": "adj",
+      "freq_rank": 3281,
+      "zipf_freq": 4.32,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "sleepy",
+      "token_id": 42023,
+      "pos": "adj",
+      "freq_rank": 8847,
+      "zipf_freq": 3.68,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "electoral",
+      "token_id": 13901,
+      "pos": "adj",
+      "freq_rank": 4607,
+      "zipf_freq": 4.12,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "smooth",
+      "token_id": 7209,
+      "pos": "adj",
+      "freq_rank": 2812,
+      "zipf_freq": 4.4,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "trustworthy",
+      "token_id": 34412,
+      "pos": "adj",
+      "freq_rank": 10866,
+      "zipf_freq": 3.51,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "racist",
+      "token_id": 9811,
+      "pos": "adj",
+      "freq_rank": 2729,
+      "zipf_freq": 4.42,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "perceptual",
+      "token_id": 49615,
+      "pos": "adj",
+      "freq_rank": 15241,
+      "zipf_freq": 2.93,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "draconian",
+      "token_id": 33483,
+      "pos": "adj",
+      "freq_rank": 15286,
+      "zipf_freq": 2.88,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "rapt",
+      "token_id": 38404,
+      "pos": "adj",
+      "freq_rank": 15461,
+      "zipf_freq": 2.53,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "dest",
+      "token_id": 2244,
+      "pos": "adj",
+      "freq_rank": 15522,
+      "zipf_freq": 2.12,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "coercive",
+      "token_id": 47236,
+      "pos": "adj",
+      "freq_rank": 15160,
+      "zipf_freq": 2.98,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "practicable",
+      "token_id": 44791,
+      "pos": "adj",
+      "freq_rank": 15334,
+      "zipf_freq": 2.84,
+      "n_probes": 11,
+      "has_synonym": true
+    },
+    {
+      "word": "presumptive",
+      "token_id": 39715,
+      "pos": "adj",
+      "freq_rank": 15345,
+      "zipf_freq": 2.82,
+      "n_probes": 10,
+      "has_synonym": false
+    },
+    {
+      "word": "arcane",
+      "token_id": 34362,
+      "pos": "adj",
+      "freq_rank": 15125,
+      "zipf_freq": 2.99,
+      "n_probes": 10,
+      "has_synonym": false
+    }
+  ]
+}

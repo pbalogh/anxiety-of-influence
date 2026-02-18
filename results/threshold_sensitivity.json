@@ -1,0 +1,205 @@
+{
+  "experiment": "threshold_sensitivity",
+  "model": "gpt2-small",
+  "bloom_heads": [
+    "L0H1",
+    "L0H5",
+    "L1H11",
+    "L3H0"
+  ],
+  "null_distribution": {
+    "L0H1": {
+      "n": 4191,
+      "mean": 0.0032823859049763964,
+      "median": 0.00042949256021529436,
+      "p95": 0.010991500690579414,
+      "p99": 0.035633191466331884,
+      "p999": 0.36158900111913683
+    },
+    "L0H5": {
+      "n": 4191,
+      "mean": 0.006843180440785236,
+      "median": 5.147272895555943e-05,
+      "p95": 0.021311834454536438,
+      "p99": 0.21180421411991132,
+      "p999": 0.41521650195121856
+    },
+    "L1H11": {
+      "n": 4191,
+      "mean": 0.009444841259631732,
+      "median": 0.0038171063642948866,
+      "p95": 0.036120906472206116,
+      "p99": 0.09187657013535509,
+      "p999": 0.2021312457323085
+    },
+    "L3H0": {
+      "n": 4191,
+      "mean": 0.004638599993550501,
+      "median": 0.0007215901277959347,
+      "p95": 0.02291687671095133,
+      "p99": 0.06132720001041908,
+      "p999": 0.13468785554170956
+    }
+  },
+  "miss_threshold_sensitivity": {
+    "L0H1": {
+      "0.001": 0.0,
+      "0.005": 0.0,
+      "0.01": 0.0,
+      "0.02": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.0
+    },
+    "L0H5": {
+      "0.001": 0.0,
+      "0.005": 0.0,
+      "0.01": 0.0,
+      "0.02": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.0
+    },
+    "L1H11": {
+      "0.001": 0.0,
+      "0.005": 0.0,
+      "0.01": 0.0,
+      "0.02": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.0
+    },
+    "L3H0": {
+      "0.001": 0.0,
+      "0.005": 0.0,
+      "0.01": 0.0042,
+      "0.02": 0.0294,
+      "0.05": 0.2941,
+      "0.1": 0.4664
+    }
+  },
+  "selectivity_threshold_sensitivity": {
+    "3": {
+      "count": 4,
+      "heads": [
+        "L0H1",
+        "L1H11",
+        "L3H0",
+        "L0H5"
+      ]
+    },
+    "5": {
+      "count": 4,
+      "heads": [
+        "L0H1",
+        "L1H11",
+        "L3H0",
+        "L0H5"
+      ]
+    },
+    "10": {
+      "count": 4,
+      "heads": [
+        "L0H1",
+        "L1H11",
+        "L3H0",
+        "L0H5"
+      ]
+    },
+    "20": {
+      "count": 4,
+      "heads": [
+        "L0H1",
+        "L1H11",
+        "L3H0",
+        "L0H5"
+      ]
+    },
+    "30": {
+      "count": 4,
+      "heads": [
+        "L0H1",
+        "L1H11",
+        "L3H0",
+        "L0H5"
+      ]
+    },
+    "50": {
+      "count": 1,
+      "heads": [
+        "L0H1"
+      ]
+    }
+  },
+  "phi_binarization_sensitivity": {
+    "0.01": {
+      "avg_phi": 0.0428,
+      "min_phi": -0.0041,
+      "max_phi": 0.1304
+    },
+    "0.05": {
+      "avg_phi": 0.0825,
+      "min_phi": 0.0095,
+      "max_phi": 0.2094
+    },
+    "0.1": {
+      "avg_phi": 0.0601,
+      "min_phi": 0.0,
+      "max_phi": 0.1795
+    },
+    "0.15": {
+      "avg_phi": 0.0507,
+      "min_phi": 0.0,
+      "max_phi": 0.1606
+    },
+    "0.2": {
+      "avg_phi": 0.0223,
+      "min_phi": -0.0105,
+      "max_phi": 0.1018
+    }
+  },
+  "recommended_thresholds": {
+    "miss_threshold": "0.01 (below 99th percentile of null distribution for all Bloom heads)",
+    "fp_binarization": "0.1 (results stable across 0.01-0.2 range)",
+    "selectivity": "3\u00d7 (results identical for any threshold 3\u00d7-50\u00d7; clear bimodal gap)"
+  },
+  "top_10_heads_by_selectivity": [
+    {
+      "head": "L0H1",
+      "selectivity": 58.6
+    },
+    {
+      "head": "L1H11",
+      "selectivity": 40.5
+    },
+    {
+      "head": "L3H0",
+      "selectivity": 38.9
+    },
+    {
+      "head": "L0H5",
+      "selectivity": 36.5
+    },
+    {
+      "head": "L6H9",
+      "selectivity": 2.7
+    },
+    {
+      "head": "L7H1",
+      "selectivity": 2.5
+    },
+    {
+      "head": "L7H10",
+      "selectivity": 2.0
+    },
+    {
+      "head": "L7H2",
+      "selectivity": 2.0
+    },
+    {
+      "head": "L3H4",
+      "selectivity": 1.8
+    },
+    {
+      "head": "L6H6",
+      "selectivity": 1.7
+    }
+  ]
+}

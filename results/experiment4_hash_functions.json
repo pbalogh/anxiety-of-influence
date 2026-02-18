@@ -1,0 +1,27 @@
+{
+  "experiment": "hash_function_analysis",
+  "model": "gpt2-small",
+  "bloom_heads": [
+    "L0H1",
+    "L0H5",
+    "L1H11",
+    "L3H0"
+  ],
+  "individual_fp_rates": {
+    "L0H1": 0.0117,
+    "L0H5": 0.0017,
+    "L1H11": 0.1883,
+    "L3H0": 0.7833
+  },
+  "avg_phi": 0.1292,
+  "combined_fp_all": 0.0017,
+  "predicted_fp_all": 3e-06,
+  "independence_pass": true,
+  "combination_works": true,
+  "diverse_patterns": true,
+  "fp_distribution": {
+    "all_agree_fp": 1,
+    "mixed": 481,
+    "none_fp": 118
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "induction_heads": [
+    {
+      "layer": 10,
+      "head": 11
+    },
+    {
+      "layer": 5,
+      "head": 0
+    },
+    {
+      "layer": 10,
+      "head": 0
+    },
+    {
+      "layer": 11,
+      "head": 10
+    },
+    {
+      "layer": 10,
+      "head": 1
+    },
+    {
+      "layer": 11,
+      "head": 9
+    },
+    {
+      "layer": 10,
+      "head": 6
+    },
+    {
+      "layer": 8,
+      "head": 1
+    },
+    {
+      "layer": 9,
+      "head": 6
+    },
+    {
+      "layer": 10,
+      "head": 7
+    },
+    {
+      "layer": 9,
+      "head": 9
+    },
+    {
+      "layer": 5,
+      "head": 5
+    },
+    {
+      "layer": 7,
+      "head": 10
+    },
+    {
+      "layer": 7,
+      "head": 2
+    },
+    {
+      "layer": 6,
+      "head": 9
+    },
+    {
+      "layer": 5,
+      "head": 1
+    }
+  ],
+  "bloom_heads": [
+    {
+      "layer": 1,
+      "head": 11
+    },
+    {
+      "layer": 3,
+      "head": 0
+    },
+    {
+      "layer": 0,
+      "head": 1
+    },
+    {
+      "layer": 0,
+      "head": 5
+    }
+  ],
+  "prev_token_heads": [
+    {
+      "layer": 4,
+      "head": 11
+    },
+    {
+      "layer": 3,
+      "head": 7
+    },
+    {
+      "layer": 2,
+      "head": 2
+    },
+    {
+      "layer": 3,
+      "head": 2
+    },
+    {
+      "layer": 5,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 9
+    },
+    {
+      "layer": 6,
+      "head": 8
+    },
+    {
+      "layer": 2,
+      "head": 5
+    },
+    {
+      "layer": 3,
+      "head": 6
+    },
+    {
+      "layer": 3,
+      "head": 8
+    },
+    {
+      "layer": 7,
+      "head": 0
+    }
+  ],
+  "overlap": [],
+  "bloom_only": [
+    {
+      "layer": 1,
+      "head": 11
+    },
+    {
+      "layer": 3,
+      "head": 0
+    },
+    {
+      "layer": 0,
+      "head": 5
+    },
+    {
+      "layer": 0,
+      "head": 1
+    }
+  ],
+  "induction_only": [
+    {
+      "layer": 10,
+      "head": 11
+    },
+    {
+      "layer": 5,
+      "head": 5
+    },
+    {
+      "layer": 11,
+      "head": 10
+    },
+    {
+      "layer": 8,
+      "head": 1
+    },
+    {
+      "layer": 9,
+      "head": 9
+    },
+    {
+      "layer": 7,
+      "head": 10
+    },
+    {
+      "layer": 9,
+      "head": 6
+    },
+    {
+      "layer": 10,
+      "head": 1
+    },
+    {
+      "layer": 11,
+      "head": 9
+    },
+    {
+      "layer": 10,
+      "head": 7
+    },
+    {
+      "layer": 5,
+      "head": 1
+    },
+    {
+      "layer": 10,
+      "head": 0
+    },
+    {
+      "layer": 5,
+      "head": 0
+    },
+    {
+      "layer": 10,
+      "head": 6
+    },
+    {
+      "layer": 7,
+      "head": 2
+    },
+    {
+      "layer": 6,
+      "head": 9
+    }
+  ],
+  "all_scores": [
+    {
+      "layer": 4,
+      "head": 11,
+      "induction_score": 0.0,
+      "prev_token_score": 0.9868,
+      "bloom_score": 0.0,
+      "selectivity": 0.0,
+      "fp_ratio": 30.7103,
+      "mean_hit_attention": 0.0
+    },
+    {
+      "layer": 3,
+      "head": 7,
+      "induction_score": 0.0,
+      "prev_token_score": 0.5548,
+      "bloom_score": 0.0,
+      "selectivity": 0.02,
+      "fp_ratio": 1.5019,
+      "mean_hit_attention": 0.002
+    },
+    {
+      "layer": 2,
+      "head": 2,
+      "induction_score": 0.0,
+      "prev_token_score": 0.4865,
+      "bloom_score": 0.0,
+      "selectivity": 0.0,
+      "fp_ratio": 0.7508,
+      "mean_hit_attention": 0.0006
+    },
+    {
+      "layer": 3,
+      "head": 2,
+      "induction_score": 0.0,
+      "prev_token_score": 0.4044,
+      "bloom_score": 0.0,
+      "selectivity": 0.02,
+      "fp_ratio": 0.2052,
+      "mean_hit_attention": 0.0029
+    },
+    {
+      "layer": 5,
+      "head": 6,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.3915,
+      "bloom_score": 0.0,
+      "selectivity": 0.03,
+      "fp_ratio": 3.6818,
+      "mean_hit_attention": 0.0014
+    },
+    {
+      "layer": 2,
+      "head": 9,
+      "induction_score": 0.0,
+      "prev_token_score": 0.3774,
+      "bloom_score": 0.0,
+      "selectivity": 0.04,
+      "fp_ratio": 3.3061,
+      "mean_hit_attention": 0.0063
+    },
+    {
+      "layer": 6,
+      "head": 8,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.3429,
+      "bloom_score": 0.0008,
+      "selectivity": 0.14,
+      "fp_ratio": 1.0806,
+      "mean_hit_attention": 0.01
+    },
+    {
+      "layer": 2,
+      "head": 5,
+      "induction_score": 0.0,
+      "prev_token_score": 0.3389,
+      "bloom_score": 0.0,
+      "selectivity": 0.03,
+      "fp_ratio": 0.653,
+      "mean_hit_attention": 0.0043
+    },
+    {
+      "layer": 3,
+      "head": 6,
+      "induction_score": 0.0,
+      "prev_token_score": 0.3342,
+      "bloom_score": 0.0005,
+      "selectivity": 0.08,
+      "fp_ratio": 1.84,
+      "mean_hit_attention": 0.0114
+    },
+    {
+      "layer": 3,
+      "head": 8,
+      "induction_score": 0.0,
+      "prev_token_score": 0.3308,
+      "bloom_score": 0.0,
+      "selectivity": 0.01,
+      "fp_ratio": 0.9947,
+      "mean_hit_attention": 0.0008
+    },
+    {
+      "layer": 7,
+      "head": 0,
+      "induction_score": 0.0002,
+      "prev_token_score": 0.3182,
+      "bloom_score": 0.0,
+      "selectivity": 0.02,
+      "fp_ratio": 1.4269,
+      "mean_hit_attention": 0.0012
+    },
+    {
+      "layer": 2,
+      "head": 3,
+      "induction_score": 0.0,
+      "prev_token_score": 0.2999,
+      "bloom_score": 0.0022,
+      "selectivity": 0.13,
+      "fp_ratio": 0.123,
+      "mean_hit_attention": 0.0228
+    },
+    {
+      "layer": 3,
+      "head": 3,
+      "induction_score": 0.0,
+      "prev_token_score": 0.2612,
+      "bloom_score": 0.0,
+      "selectivity": 0.02,
+      "fp_ratio": 2.2065,
+      "mean_hit_attention": 0.0007
+    },
+    {
+      "layer": 2,
+      "head": 8,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.2563,
+      "bloom_score": 0.0003,
+      "selectivity": 0.06,
+      "fp_ratio": 0.6869,
+      "mean_hit_attention": 0.0088
+    },
+    {
+      "layer": 4,
+      "head": 3,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.2281,
+      "bloom_score": 0.0017,
+      "selectivity": 0.11,
+      "fp_ratio": 2.5646,
+      "mean_hit_attention": 0.0175
+    },
+    {
+      "layer": 3,
+      "head": 11,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.2166,
+      "bloom_score": 0.0001,
+      "selectivity": 0.06,
+      "fp_ratio": 1.4447,
+      "mean_hit_attention": 0.0056
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "induction_score": 0.001,
+      "prev_token_score": 0.2131,
+      "bloom_score": 0.0113,
+      "selectivity": 0.29,
+      "fp_ratio": 0.8379,
+      "mean_hit_attention": 0.0422
+    },
+    {
+      "layer": 0,
+      "head": 7,
+      "induction_score": 0.0011,
+      "prev_token_score": 0.2042,
+      "bloom_score": 0.0092,
+      "selectivity": 0.27,
+      "fp_ratio": 0.6448,
+      "mean_hit_attention": 0.035
+    },
+    {
+      "layer": 6,
+      "head": 0,
+      "induction_score": 0.0005,
+      "prev_token_score": 0.189,
+      "bloom_score": 0.0027,
+      "selectivity": 0.16,
+      "fp_ratio": 0.6489,
+      "mean_hit_attention": 0.0186
+    },
+    {
+      "layer": 4,
+      "head": 7,
+      "induction_score": 0.0032,
+      "prev_token_score": 0.1843,
+      "bloom_score": 0.0154,
+      "selectivity": 0.54,
+      "fp_ratio": 1.2355,
+      "mean_hit_attention": 0.0325
+    },
+    {
+      "layer": 5,
+      "head": 4,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.1804,
+      "bloom_score": 0.0001,
+      "selectivity": 0.06,
+      "fp_ratio": 0.5009,
+      "mean_hit_attention": 0.0057
+    },
+    {
+      "layer": 1,
+      "head": 1,
+      "induction_score": 0.0017,
+      "prev_token_score": 0.1768,
+      "bloom_score": 0.0162,
+      "selectivity": 0.33,
+      "fp_ratio": 0.6573,
+      "mean_hit_attention": 0.0332
+    },
+    {
+      "layer": 8,
+      "head": 7,
+      "induction_score": 0.0004,
+      "prev_token_score": 0.1726,
+      "bloom_score": 0.0001,
+      "selectivity": 0.08,
+      "fp_ratio": 0.5845,
+      "mean_hit_attention": 0.0054
+    },
+    {
+      "layer": 2,
+      "head": 0,
+      "induction_score": 0.0011,
+      "prev_token_score": 0.1623,
+      "bloom_score": 0.0024,
+      "selectivity": 0.16,
+      "fp_ratio": 1.4716,
+      "mean_hit_attention": 0.0178
+    },
+    {
+      "layer": 9,
+      "head": 3,
+      "induction_score": 0.0009,
+      "prev_token_score": 0.1539,
+      "bloom_score": 0.0014,
+      "selectivity": 0.17,
+      "fp_ratio": 1.2036,
+      "mean_hit_attention": 0.0152
+    },
+    {
+      "layer": 4,
+      "head": 6,
+      "induction_score": 0.0009,
+      "prev_token_score": 0.1453,
+      "bloom_score": 0.0136,
+      "selectivity": 0.45,
+      "fp_ratio": 1.0322,
+      "mean_hit_attention": 0.0304
+    },
+    {
+      "layer": 3,
+      "head": 1,
+      "induction_score": 0.0003,
+      "prev_token_score": 0.1355,
+      "bloom_score": 0.0024,
+      "selectivity": 0.19,
+      "fp_ratio": 0.2991,
+      "mean_hit_attention": 0.0174
+    },
+    {
+      "layer": 2,
+      "head": 10,
+      "induction_score": 0.0053,
+      "prev_token_score": 0.1305,
+      "bloom_score": 0.0497,
+      "selectivity": 0.69,
+      "fp_ratio": 1.0763,
+      "mean_hit_attention": 0.0724
+    },
+    {
+      "layer": 4,
+      "head": 5,
+      "induction_score": 0.0001,
+      "prev_token_score": 0.124,
+      "bloom_score": 0.0003,
+      "selectivity": 0.08,
+      "fp_ratio": 0.5639,
+      "mean_hit_attention": 0.0076
+    },
+    {
+      "layer": 5,
+      "head": 2,
+      "induction_score": 0.0003,
+      "prev_token_score": 0.1221,
+      "bloom_score": 0.0089,
+      "selectivity": 0.32,
+      "fp_ratio": 0.5916,
+      "mean_hit_attention": 0.0261
+    }
+  ]
+}

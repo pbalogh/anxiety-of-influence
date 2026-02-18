@@ -1,0 +1,246 @@
+{
+  "experiment": "ablation_study",
+  "model": "gpt2-small",
+  "device": "mps",
+  "bloom_heads": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "induction_heads": [
+    [
+      5,
+      5
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "control_heads": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "conditions": {
+    "baseline": {
+      "diverse": {
+        "perplexity": 67.6023230036265,
+        "avg_neg_log_prob": 4.213642346417463,
+        "total_tokens": 270
+      },
+      "with_repeats": {
+        "perplexity": 74.69638926408612,
+        "avg_neg_log_prob": 4.3134317544790415,
+        "total_tokens": 130
+      },
+      "without_repeats": {
+        "perplexity": 226.96148211060145,
+        "avg_neg_log_prob": 5.424780320751575,
+        "total_tokens": 129
+      }
+    },
+    "ablate_bloom_heads": {
+      "diverse": {
+        "perplexity": 74.49505727729878,
+        "avg_neg_log_prob": 4.310732777913412,
+        "total_tokens": 270
+      },
+      "with_repeats": {
+        "perplexity": 81.92770328149604,
+        "avg_neg_log_prob": 4.405837191068209,
+        "total_tokens": 130
+      },
+      "without_repeats": {
+        "perplexity": 217.01568538902592,
+        "avg_neg_log_prob": 5.379969633826914,
+        "total_tokens": 129
+      }
+    },
+    "ablate_control_heads": {
+      "diverse": {
+        "perplexity": 70.47179791022815,
+        "avg_neg_log_prob": 4.255212600142867,
+        "total_tokens": 270
+      },
+      "with_repeats": {
+        "perplexity": 83.51589256581302,
+        "avg_neg_log_prob": 4.425036943875826,
+        "total_tokens": 130
+      },
+      "without_repeats": {
+        "perplexity": 239.37335200438423,
+        "avg_neg_log_prob": 5.478024475334227,
+        "total_tokens": 129
+      }
+    },
+    "ablate_induction_heads": {
+      "diverse": {
+        "perplexity": 126.87772124893112,
+        "avg_neg_log_prob": 4.8432237978334785,
+        "total_tokens": 270
+      },
+      "with_repeats": {
+        "perplexity": 102.77946581634319,
+        "avg_neg_log_prob": 4.632585584200346,
+        "total_tokens": 130
+      },
+      "without_repeats": {
+        "perplexity": 511.1938312712219,
+        "avg_neg_log_prob": 6.2367488358371945,
+        "total_tokens": 129
+      }
+    },
+    "ablate_bloom_and_induction": {
+      "diverse": {
+        "perplexity": 205.19906514795142,
+        "avg_neg_log_prob": 5.323980557477033,
+        "total_tokens": 270
+      },
+      "with_repeats": {
+        "perplexity": 151.9373926851587,
+        "avg_neg_log_prob": 5.023468545766977,
+        "total_tokens": 130
+      },
+      "without_repeats": {
+        "perplexity": 774.9029207480695,
+        "avg_neg_log_prob": 6.652737757956335,
+        "total_tokens": 129
+      }
+    }
+  },
+  "deltas": {
+    "ablate_bloom_heads": {
+      "diverse": {
+        "baseline_perplexity": 67.6023230036265,
+        "ablated_perplexity": 74.49505727729878,
+        "absolute_change": 6.892734273672289,
+        "percent_change": 10.19600210084871
+      },
+      "with_repeats": {
+        "baseline_perplexity": 74.69638926408612,
+        "ablated_perplexity": 81.92770328149604,
+        "absolute_change": 7.231314017409915,
+        "percent_change": 9.68094186165263
+      },
+      "without_repeats": {
+        "baseline_perplexity": 226.96148211060145,
+        "ablated_perplexity": 217.01568538902592,
+        "absolute_change": -9.945796721575533,
+        "percent_change": -4.382151821130957
+      }
+    },
+    "ablate_control_heads": {
+      "diverse": {
+        "baseline_perplexity": 67.6023230036265,
+        "ablated_perplexity": 70.47179791022815,
+        "absolute_change": 2.8694749066016527,
+        "percent_change": 4.244639502177641
+      },
+      "with_repeats": {
+        "baseline_perplexity": 74.69638926408612,
+        "ablated_perplexity": 83.51589256581302,
+        "absolute_change": 8.819503301726897,
+        "percent_change": 11.807134707068494
+      },
+      "without_repeats": {
+        "baseline_perplexity": 226.96148211060145,
+        "ablated_perplexity": 239.37335200438423,
+        "absolute_change": 12.411869893782779,
+        "percent_change": 5.468712037989911
+      }
+    },
+    "ablate_induction_heads": {
+      "diverse": {
+        "baseline_perplexity": 67.6023230036265,
+        "ablated_perplexity": 126.87772124893112,
+        "absolute_change": 59.27539824530463,
+        "percent_change": 87.68248724548242
+      },
+      "with_repeats": {
+        "baseline_perplexity": 74.69638926408612,
+        "ablated_perplexity": 102.77946581634319,
+        "absolute_change": 28.08307655225707,
+        "percent_change": 37.59629726273711
+      },
+      "without_repeats": {
+        "baseline_perplexity": 226.96148211060145,
+        "ablated_perplexity": 511.1938312712219,
+        "absolute_change": 284.2323491606204,
+        "percent_change": 125.23373856983807
+      }
+    },
+    "ablate_bloom_and_induction": {
+      "diverse": {
+        "baseline_perplexity": 67.6023230036265,
+        "ablated_perplexity": 205.19906514795142,
+        "absolute_change": 137.59674214432493,
+        "percent_change": 203.53848215680935
+      },
+      "with_repeats": {
+        "baseline_perplexity": 74.69638926408612,
+        "ablated_perplexity": 151.9373926851587,
+        "absolute_change": 77.24100342107258,
+        "percent_change": 103.40660931814263
+      },
+      "without_repeats": {
+        "baseline_perplexity": 226.96148211060145,
+        "ablated_perplexity": 774.9029207480695,
+        "absolute_change": 547.9414386374681,
+        "percent_change": 241.424859206043
+      }
+    }
+  },
+  "interaction_analysis": {
+    "bloom_heads": {
+      "repeat_pct_change": 9.68094186165263,
+      "no_repeat_pct_change": -4.382151821130957,
+      "interaction_effect": 14.063093682783588
+    },
+    "control_heads": {
+      "repeat_pct_change": 11.807134707068494,
+      "no_repeat_pct_change": 5.468712037989911,
+      "interaction_effect": 6.338422669078583
+    },
+    "induction_heads": {
+      "repeat_pct_change": 37.59629726273711,
+      "no_repeat_pct_change": 125.23373856983807,
+      "interaction_effect": -87.63744130710096
+    }
+  },
+  "verdict": "POSITIVE: Bloom heads show a stronger repeat-token interaction (+14.06%) than control heads (+6.34%). This supports their role as membership testers."
+}
