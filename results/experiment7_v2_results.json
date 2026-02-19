@@ -2,7 +2,7 @@
   "experiment": "capacity_confound_control_v2",
   "fix_description": "Use distinct prefix tokens + probes + PAD (not cyclic repeats)",
   "model": "gpt2-small",
-  "device": "mps",
+  "device": "cpu",
   "d_head": 64,
   "pad_token": 50256,
   "bloom_heads": [
@@ -56,17 +56,17 @@
         "n_unique": 5,
         "total_length": 200,
         "L0H1": {
-          "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.009064317721737703,
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.007993727176775186,
           "ci_95": [
             0.0,
-            0.0333
+            0.02
           ],
           "n_probes": 150
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.0006712585867436852,
+          "mean_fp_attention": 0.0007755182813385156,
           "ci_95": [
             0.0,
             0.0
@@ -74,47 +74,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 0.6266666666666667,
-          "mean_fp_attention": 0.22231800135981758,
+          "fp_rate": 0.1,
+          "mean_fp_attention": 0.044635947803035377,
           "ci_95": [
-            0.5467,
-            0.7
+            0.0533,
+            0.1533
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.5497700170675913,
+          "fp_rate": 0.013333333333333334,
+          "mean_fp_attention": 0.01772054993469889,
           "ci_95": [
-            1.0,
-            1.0
+            0.0,
+            0.0333
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.5678015657265981,
+          "fp_rate": 0.1,
+          "mean_fp_attention": 0.04404120818168546,
           "ci_95": [
-            1.0,
-            1.0
+            0.0533,
+            0.1533
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.5679500806331634,
+          "fp_rate": 0.09333333333333334,
+          "mean_fp_attention": 0.03874258159426972,
           "ci_95": [
-            1.0,
-            1.0
+            0.0467,
+            0.14
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.5712294268608094,
+          "fp_rate": 0.05333333333333334,
+          "mean_fp_attention": 0.0281576113239862,
           "ci_95": [
-            1.0,
-            1.0
+            0.02,
+            0.0933
           ],
           "n_probes": 150
         }
@@ -123,17 +123,17 @@
         "n_unique": 20,
         "total_length": 200,
         "L0H1": {
-          "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.011282848243232972,
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.011171848820155598,
           "ci_95": [
             0.0,
-            0.0333
+            0.02
           ],
           "n_probes": 150
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.0008564612843732296,
+          "mean_fp_attention": 0.0012919623808647885,
           "ci_95": [
             0.0,
             0.0
@@ -141,47 +141,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 0.9733333333333334,
-          "mean_fp_attention": 0.6030482025071978,
+          "fp_rate": 0.32666666666666666,
+          "mean_fp_attention": 0.08456083249300718,
           "ci_95": [
-            0.9467,
-            0.9933
+            0.2533,
+            0.4
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8308686625957489,
+          "fp_rate": 0.21333333333333335,
+          "mean_fp_attention": 0.06928885793468605,
           "ci_95": [
-            1.0,
-            1.0
+            0.1467,
+            0.28
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8364335433642069,
+          "fp_rate": 0.5133333333333333,
+          "mean_fp_attention": 0.12185072752957543,
           "ci_95": [
-            1.0,
-            1.0
+            0.4333,
+            0.5933
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8368883128960928,
+          "fp_rate": 0.22,
+          "mean_fp_attention": 0.07207548190606758,
           "ci_95": [
-            1.0,
-            1.0
+            0.1533,
+            0.2867
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.837964940071106,
+          "fp_rate": 0.24,
+          "mean_fp_attention": 0.08862943144049495,
           "ci_95": [
-            1.0,
-            1.0
+            0.1733,
+            0.3067
           ],
           "n_probes": 150
         }
@@ -190,17 +190,17 @@
         "n_unique": 50,
         "total_length": 200,
         "L0H1": {
-          "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.013771828011376783,
+          "fp_rate": 0.02,
+          "mean_fp_attention": 0.016704752512450797,
           "ci_95": [
             0.0,
-            0.0333
+            0.0467
           ],
           "n_probes": 150
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.0023324550095837064,
+          "mean_fp_attention": 0.0025699224737976084,
           "ci_95": [
             0.0,
             0.0
@@ -208,47 +208,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8682192546129227,
+          "fp_rate": 0.28,
+          "mean_fp_attention": 0.08445525792427361,
           "ci_95": [
-            1.0,
-            1.0
+            0.2133,
+            0.3533
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9224834724267323,
+          "fp_rate": 0.8,
+          "mean_fp_attention": 0.1811921527981758,
           "ci_95": [
-            1.0,
-            1.0
+            0.7333,
+            0.86
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9263646829128266,
+          "fp_rate": 0.7466666666666667,
+          "mean_fp_attention": 0.18174395456910133,
           "ci_95": [
-            1.0,
-            1.0
+            0.6733,
+            0.8133
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9256278681755066,
+          "fp_rate": 0.42,
+          "mean_fp_attention": 0.1212143008876592,
           "ci_95": [
-            1.0,
-            1.0
+            0.34,
+            0.5
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9264828316370646,
+          "fp_rate": 0.42,
+          "mean_fp_attention": 0.13406328483950347,
           "ci_95": [
-            1.0,
-            1.0
+            0.34,
+            0.5
           ],
           "n_probes": 150
         }
@@ -258,7 +258,7 @@
         "total_length": 200,
         "L0H1": {
           "fp_rate": 0.03333333333333333,
-          "mean_fp_attention": 0.018750576858195322,
+          "mean_fp_attention": 0.018251500603667713,
           "ci_95": [
             0.0067,
             0.0667
@@ -266,56 +266,56 @@
           "n_probes": 150
         },
         "L0H5": {
-          "fp_rate": 0.0,
-          "mean_fp_attention": 0.004483879531265605,
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.00505462552510077,
           "ci_95": [
             0.0,
-            0.0
+            0.02
           ],
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8196871379017829,
+          "fp_rate": 0.3333333333333333,
+          "mean_fp_attention": 0.0911325164573888,
           "ci_95": [
-            1.0,
-            1.0
+            0.26,
+            0.4067
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9559688480695089,
+          "fp_rate": 0.9333333333333333,
+          "mean_fp_attention": 0.2810250090807676,
           "ci_95": [
-            1.0,
-            1.0
+            0.8933,
+            0.9733
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9611620569229126,
+          "fp_rate": 0.9066666666666666,
+          "mean_fp_attention": 0.24199648848424354,
           "ci_95": [
-            1.0,
-            1.0
+            0.8533,
+            0.9467
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9603032433986664,
+          "fp_rate": 0.47333333333333333,
+          "mean_fp_attention": 0.13254720383168508,
           "ci_95": [
-            1.0,
-            1.0
+            0.3933,
+            0.5533
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9613095847765605,
+          "fp_rate": 0.5733333333333334,
+          "mean_fp_attention": 0.17038436689724526,
           "ci_95": [
-            1.0,
-            1.0
+            0.4933,
+            0.6533
           ],
           "n_probes": 150
         }
@@ -325,7 +325,7 @@
         "total_length": 200,
         "L0H1": {
           "fp_rate": 0.04,
-          "mean_fp_attention": 0.024146600420838996,
+          "mean_fp_attention": 0.02180403009765238,
           "ci_95": [
             0.0133,
             0.0733
@@ -334,7 +334,7 @@
         },
         "L0H5": {
           "fp_rate": 0.006666666666666667,
-          "mean_fp_attention": 0.008220111529202162,
+          "mean_fp_attention": 0.009783681090096556,
           "ci_95": [
             0.0,
             0.02
@@ -342,47 +342,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9137706152598063,
+          "fp_rate": 0.31333333333333335,
+          "mean_fp_attention": 0.09155481465781729,
           "ci_95": [
-            1.0,
-            1.0
+            0.24,
+            0.3933
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9740256011486054,
+          "fp_rate": 0.96,
+          "mean_fp_attention": 0.3333264789481958,
           "ci_95": [
-            1.0,
-            1.0
+            0.9267,
+            0.9867
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9780040697256724,
+          "fp_rate": 0.9466666666666667,
+          "mean_fp_attention": 0.2853960957874854,
           "ci_95": [
-            1.0,
-            1.0
+            0.9067,
+            0.98
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9774287486076355,
+          "fp_rate": 0.6466666666666666,
+          "mean_fp_attention": 0.20613518096817038,
           "ci_95": [
-            1.0,
-            1.0
+            0.5667,
+            0.72
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9777164177099864,
+          "fp_rate": 0.7133333333333334,
+          "mean_fp_attention": 0.2165609982299308,
           "ci_95": [
-            1.0,
-            1.0
+            0.64,
+            0.78
           ],
           "n_probes": 150
         }
@@ -402,17 +402,17 @@
         "n_unique": 50,
         "total_length": 55,
         "L0H1": {
-          "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.0137079454754227,
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.014231943851530862,
           "ci_95": [
             0.0,
-            0.0333
+            0.02
           ],
           "n_probes": 150
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.0024392146014345904,
+          "mean_fp_attention": 0.003279481969090436,
           "ci_95": [
             0.0,
             0.0
@@ -420,47 +420,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8682974847157796,
+          "fp_rate": 0.26,
+          "mean_fp_attention": 0.08240616869802277,
           "ci_95": [
-            1.0,
-            1.0
+            0.1933,
+            0.3333
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9228050808111826,
+          "fp_rate": 0.7133333333333334,
+          "mean_fp_attention": 0.16184695719430844,
           "ci_95": [
-            1.0,
-            1.0
+            0.64,
+            0.7867
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.926523863474528,
+          "fp_rate": 0.8,
+          "mean_fp_attention": 0.20147285545865695,
           "ci_95": [
-            1.0,
-            1.0
+            0.7333,
+            0.8667
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9258254325389862,
+          "fp_rate": 0.54,
+          "mean_fp_attention": 0.15495254021758834,
           "ci_95": [
-            1.0,
-            1.0
+            0.46,
+            0.62
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.926618926525116,
+          "fp_rate": 0.48,
+          "mean_fp_attention": 0.15373406678671017,
           "ci_95": [
-            1.0,
-            1.0
+            0.4,
+            0.56
           ],
           "n_probes": 150
         }
@@ -469,17 +469,17 @@
         "n_unique": 50,
         "total_length": 100,
         "L0H1": {
-          "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.016602962269195512,
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.013855512449808885,
           "ci_95": [
             0.0,
-            0.0333
+            0.02
           ],
           "n_probes": 150
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.002601025931029047,
+          "mean_fp_attention": 0.0023876905107064837,
           "ci_95": [
             0.0,
             0.0
@@ -487,47 +487,47 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8992802206675211,
+          "fp_rate": 0.3,
+          "mean_fp_attention": 0.08724885701512297,
           "ci_95": [
-            1.0,
-            1.0
+            0.2267,
+            0.3733
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9231268954277039,
+          "fp_rate": 0.7266666666666667,
+          "mean_fp_attention": 0.16862610605855782,
           "ci_95": [
-            1.0,
-            1.0
+            0.6533,
+            0.7933
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9264907805124919,
+          "fp_rate": 0.8066666666666666,
+          "mean_fp_attention": 0.21004839239021142,
           "ci_95": [
-            1.0,
-            1.0
+            0.74,
+            0.8667
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9256295224030813,
+          "fp_rate": 0.5133333333333333,
+          "mean_fp_attention": 0.1505750796633462,
           "ci_95": [
-            1.0,
-            1.0
+            0.4333,
+            0.5933
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9265594983100891,
+          "fp_rate": 0.4866666666666667,
+          "mean_fp_attention": 0.14615702577245732,
           "ci_95": [
-            1.0,
-            1.0
+            0.4067,
+            0.5667
           ],
           "n_probes": 150
         }
@@ -536,75 +536,8 @@
         "n_unique": 50,
         "total_length": 150,
         "L0H1": {
-          "fp_rate": 0.02666666666666667,
-          "mean_fp_attention": 0.016576822538142248,
-          "ci_95": [
-            0.0067,
-            0.0533
-          ],
-          "n_probes": 150
-        },
-        "L0H5": {
-          "fp_rate": 0.0,
-          "mean_fp_attention": 0.002908443237586956,
-          "ci_95": [
-            0.0,
-            0.0
-          ],
-          "n_probes": 150
-        },
-        "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.8809142450491587,
-          "ci_95": [
-            1.0,
-            1.0
-          ],
-          "n_probes": 150
-        },
-        "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9224907084306081,
-          "ci_95": [
-            1.0,
-            1.0
-          ],
-          "n_probes": 150
-        },
-        "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9265510416030884,
-          "ci_95": [
-            1.0,
-            1.0
-          ],
-          "n_probes": 150
-        },
-        "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9258011758327485,
-          "ci_95": [
-            1.0,
-            1.0
-          ],
-          "n_probes": 150
-        },
-        "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9267444952329,
-          "ci_95": [
-            1.0,
-            1.0
-          ],
-          "n_probes": 150
-        }
-      },
-      "length_200": {
-        "n_unique": 50,
-        "total_length": 200,
-        "L0H1": {
           "fp_rate": 0.013333333333333334,
-          "mean_fp_attention": 0.016121531916821065,
+          "mean_fp_attention": 0.013224334159021965,
           "ci_95": [
             0.0,
             0.0333
@@ -613,7 +546,7 @@
         },
         "L0H5": {
           "fp_rate": 0.0,
-          "mean_fp_attention": 0.0025288788517718788,
+          "mean_fp_attention": 0.0024043429836577463,
           "ci_95": [
             0.0,
             0.0
@@ -621,47 +554,114 @@
           "n_probes": 150
         },
         "L1H11": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9022260471185048,
+          "fp_rate": 0.36,
+          "mean_fp_attention": 0.08940501009424527,
           "ci_95": [
-            1.0,
-            1.0
+            0.28,
+            0.4333
           ],
           "n_probes": 150
         },
         "L3H0": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9225758385658264,
+          "fp_rate": 0.74,
+          "mean_fp_attention": 0.1798667217542728,
           "ci_95": [
-            1.0,
-            1.0
+            0.6733,
+            0.8067
           ],
           "n_probes": 150
         },
         "L5H5": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9264450216293335,
+          "fp_rate": 0.7866666666666666,
+          "mean_fp_attention": 0.19815840375920138,
           "ci_95": [
-            1.0,
-            1.0
+            0.72,
+            0.8533
           ],
           "n_probes": 150
         },
         "L7H10": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9257594112555186,
+          "fp_rate": 0.49333333333333335,
+          "mean_fp_attention": 0.12579423256373654,
           "ci_95": [
-            1.0,
-            1.0
+            0.4133,
+            0.5733
           ],
           "n_probes": 150
         },
         "L6H9": {
-          "fp_rate": 1.0,
-          "mean_fp_attention": 0.9265853635470073,
+          "fp_rate": 0.47333333333333333,
+          "mean_fp_attention": 0.15381564473112425,
           "ci_95": [
-            1.0,
-            1.0
+            0.3933,
+            0.5533
+          ],
+          "n_probes": 150
+        }
+      },
+      "length_200": {
+        "n_unique": 50,
+        "total_length": 200,
+        "L0H1": {
+          "fp_rate": 0.006666666666666667,
+          "mean_fp_attention": 0.011653147287239941,
+          "ci_95": [
+            0.0,
+            0.02
+          ],
+          "n_probes": 150
+        },
+        "L0H5": {
+          "fp_rate": 0.0,
+          "mean_fp_attention": 0.00240251030042297,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "n_probes": 150
+        },
+        "L1H11": {
+          "fp_rate": 0.37333333333333335,
+          "mean_fp_attention": 0.08938035142297546,
+          "ci_95": [
+            0.3,
+            0.4533
+          ],
+          "n_probes": 150
+        },
+        "L3H0": {
+          "fp_rate": 0.76,
+          "mean_fp_attention": 0.19452748334656159,
+          "ci_95": [
+            0.6867,
+            0.8267
+          ],
+          "n_probes": 150
+        },
+        "L5H5": {
+          "fp_rate": 0.7866666666666666,
+          "mean_fp_attention": 0.19402394068737824,
+          "ci_95": [
+            0.72,
+            0.8467
+          ],
+          "n_probes": 150
+        },
+        "L7H10": {
+          "fp_rate": 0.48,
+          "mean_fp_attention": 0.13879054539759333,
+          "ci_95": [
+            0.4,
+            0.56
+          ],
+          "n_probes": 150
+        },
+        "L6H9": {
+          "fp_rate": 0.48,
+          "mean_fp_attention": 0.1336740570717181,
+          "ci_95": [
+            0.4,
+            0.56
           ],
           "n_probes": 150
         }
@@ -672,67 +672,82 @@
     "fixed_length_fit": {
       "L0H1": {
         "fitted_m": 1000.0,
-        "fitted_k": 3.35,
-        "r_squared": -1.586,
+        "fitted_k": 3.3,
+        "r_squared": -0.8151,
         "observed_fp": [
-          0.0133,
-          0.0133,
-          0.0133,
+          0.0067,
+          0.0067,
+          0.02,
           0.0333,
           0.04
         ],
         "predicted_fp": [
           0.0,
           0.0001,
-          0.0019,
-          0.0149,
-          0.0704
+          0.002,
+          0.0152,
+          0.0706
         ]
       },
       "L0H5": {
         "error": "variance too low",
-        "std": 0.0027
+        "std": 0.0033
       },
       "L1H11": {
-        "fitted_m": 4.95,
-        "fitted_k": 0.86,
-        "r_squared": 1.0,
+        "fitted_m": 1000.0,
+        "fitted_k": 0.31,
+        "r_squared": 0.3672,
         "observed_fp": [
-          0.6267,
-          0.9733,
-          1.0,
-          1.0,
-          1.0
+          0.1,
+          0.3267,
+          0.28,
+          0.3333,
+          0.3133
         ],
         "predicted_fp": [
-          0.6267,
-          0.9733,
-          0.9999,
-          1.0,
-          1.0
+          0.1354,
+          0.2077,
+          0.2752,
+          0.3401,
+          0.4062
         ]
       },
       "L3H0": {
-        "error": "variance too low",
-        "std": 0.0
+        "fitted_m": 69.14,
+        "fitted_k": 3.92,
+        "r_squared": 0.994,
+        "observed_fp": [
+          0.0133,
+          0.2133,
+          0.8,
+          0.9333,
+          0.96
+        ],
+        "predicted_fp": [
+          0.0042,
+          0.2182,
+          0.7886,
+          0.9865,
+          0.9999
+        ]
       }
     },
     "variable_length_fit": {
       "L0H1": {
-        "fitted_m": 1000.0,
-        "fitted_k": 3.38,
-        "r_squared": -14.8336
+        "error": "variance too low"
       },
       "L0H5": {
         "error": "variance too low"
       },
       "L1H11": {
-        "fitted_m": 6.41,
-        "fitted_k": 0.91,
-        "r_squared": 0.9998
+        "fitted_m": 1000.0,
+        "fitted_k": 0.34,
+        "r_squared": -0.6653
       },
       "L3H0": {
-        "error": "variance too low"
+        "fitted_m": 67.4,
+        "fitted_k": 3.23,
+        "r_squared": 0.9983
       }
     }
   }

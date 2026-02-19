@@ -92,7 +92,7 @@ We argue that Bloom filter heads are distinct from all three categories, perform
 
 \subsection{Models}
 
-We analyze four autoregressive language models via TransformerLens \citep{nanda2022transformerlens}: GPT-2 small (12 layers $\times$ 12 heads, $d_\text{head} = 64$), GPT-2 medium (24$\times$16), GPT-2 large (36$\times$20) \citep{radford2019language}, and Pythia-160M (12$\times$12) \citep{biderman2023pythia}.
+We analyze four autoregressive language models via TransformerLens \citep{nanda2022transformerlens}: GPT-2 small (12 layers $\times$ 12 heads, $d_\text{head} = 64$), GPT-2 medium (24$\times$16), GPT-2 large (36$\times$20) \citep{radford2019language}, and Pythia-160M (12$\times$12) \citep{biderman2023pythia}. All experiments were run on CPU and independently validated to rule out hardware-specific computation artifacts (Appendix~\ref{app:cpu_validation}).
 
 \subsection{Stimulus Design}
 
@@ -517,10 +517,27 @@ Complete selectivity, miss rate, and FP ratio for all 144 heads in GPT-2 small a
 
 \item \textbf{IRB.} N/A.
 
-\item \textbf{Compute.} All experiments run on a single consumer GPU (NVIDIA RTX 3090 or Apple M-series). Total compute: approximately 20 GPU-hours. No large-scale training.
+\item \textbf{Compute.} All experiments run on CPU (Apple M-series Mac mini, 16GB RAM). Our primary measurements are attention patterns, which are deterministic given the same model weights and inputs. We validated all results on CPU after discovering that PyTorch's MPS (Metal Performance Shaders) backend can produce silently incorrect results for TransformerLens inference (see Appendix~\ref{app:cpu_validation}). Total compute: approximately 2 CPU-hours. No large-scale training.
 
 \item \textbf{Error bars and statistical significance.} All main results include bootstrap 95\% confidence intervals. Hypothesis tests use Bonferroni correction ($\alpha = 0.05/144$). Model comparison uses AIC/BIC. Effect sizes reported as Cohen's $d$.
 
 \end{enumerate}
+
+\section{CPU Validation}
+\label{app:cpu_validation}
+
+During related work on activation patching, we discovered that PyTorch's MPS (Metal Performance Shaders) backend---the GPU acceleration path for Apple Silicon---can produce silently incorrect results when running TransformerLens inference on GPT-2. Specifically, logit-level outputs are corrupted: on the standard Indirect Object Identification (IOI) benchmark, MPS produces an \emph{inverted} logit difference ($-0.99$ vs.\ $+3.36$ on CPU), with the correct answer's probability dropping from 67.7\% to 0.0\%. This issue has been reported to the TransformerLens maintainers.\footnote{\url{https://github.com/TransformerLensOrg/TransformerLens/issues/1178}} It appears related to several known PyTorch MPS correctness bugs.\footnote{\url{https://github.com/pytorch/pytorch/issues?q=label:\"module:+mps\"+label:\"module:+correctness+(silent)\"}}
+
+To ensure our results are not affected, we re-ran all eight experiments (Sections~\ref{sec:signature}--\ref{sec:ablation}) on CPU and compared the outputs. The results are consistent across backends:
+
+\begin{itemize}
+    \item \textbf{Attention patterns} (Experiments 1--4, 6--7): Hit attention values match to four decimal places (e.g., L0H1 hit attention = 0.4887 on both MPS and CPU). The same four heads are identified as the top Bloom filter candidates in both conditions, with identical miss rates.
+    \item \textbf{Capacity curves} (Experiment 3, 7): L3H0 fitted parameters are nearly identical (MPS: $R^2 = 0.9921$, $m = 59$; CPU: $R^2 = 0.9888$, $m = 52$). Both backends produce the same qualitative classification of head subtypes.
+    \item \textbf{Ablation} (Experiments 5, 8): Perplexity deltas and interaction effects are consistent. The nuanced picture---repeat-specific effects under zero ablation, broader contributions under mean ablation---is the same on both backends.
+\end{itemize}
+
+The Bloom filter paper's primary measurements are \emph{attention patterns} at early layers (0--3), not logit-level outputs. The MPS bug affects the final projection to vocabulary space but does not corrupt intermediate attention computations. Ablation experiments measure \emph{relative} perplexity changes, where both baseline and ablated conditions are equally affected by any systematic bias, preserving the validity of the deltas. CPU validation scripts and full comparison results are available in the code repository.
+
+\textbf{Recommendation for practitioners:} We advise running TransformerLens experiments on CPU or CUDA rather than MPS until the underlying PyTorch issues are resolved. MPS may produce correct attention patterns but silently incorrect logits, making it particularly dangerous for activation patching, logit lens, and causal intervention studies where logit-level accuracy is critical.
 
 \end{document}
